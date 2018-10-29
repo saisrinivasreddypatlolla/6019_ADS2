@@ -1,8 +1,4 @@
 Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m1\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m1\1.1 Graph\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m1\1.1 Graph\Solution.java:150: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m1\1.1 Graph\Solution.java:189: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m1\1.1 Graph\Solution.java:203: Class Solution should be declared as final. [FinalClass]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 1 errors.
