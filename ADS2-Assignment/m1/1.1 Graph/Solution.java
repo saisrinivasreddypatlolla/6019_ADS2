@@ -4,19 +4,19 @@ import java.util.Scanner;
  */
 class ListGraph {
     /**
-     * { var_description }.
+     * number f vertices.
      */
     private int vertices;
     /**
-     * { var_description }.
+     * number of edges.
      */
     private int edges;
     /**
-     * { var_description }.
+     * bag of adjacent values.
      */
     private Bag<Integer>[] adjacent;
     /**
-     * { var_description }.
+     * intput strings.
      */
     private String[] tokens;
     /**
@@ -27,6 +27,7 @@ class ListGraph {
     }
     /**
      * Constructs the object.
+     * Time complexity of this method is O(N)
      *
      * @param      scan  The scan
      */
@@ -45,32 +46,36 @@ class ListGraph {
     }
     /**
      * Adds an edge.
+     * Time complexity of this method is O(N)
+     * 
      *
-     * @param      v     { parameter_description }
-     * @param      w     { parameter_description }
+     * @param      vertexOne  The vertex one
+     * @param      vertexTwo  The vertex two
      */
-    public void addEdge(final int v, final int w) {
-        if (v == w) {
+    public void addEdge(final int vertexOne, final int vertexTwo) {
+        if (vertexOne == vertexTwo) {
             return;
         }
-        if (!hasEdge(v, w)) {
+        if (!hasEdge(vertexOne, vertexTwo)) {
             edges++;
         }
-        adjacent[v].add(w);
-        adjacent[w].add(v);
+        adjacent[vertexOne].add(vertexTwo);
+        adjacent[vertexTwo].add(vertexOne);
     }
     /**
-     * { function_description }.
+     * this method returns the iterable.
      *
      * @param      vertex  The vertex
      *
-     * @return     { description_of_the_return_value }
+     * @return     the iterable
      */
     public Iterable<Integer> adj(final int vertex) {
         return adjacent[vertex];
     }
     /**
      * Determines if it has edge.
+     * Time complexity of this method is O(N)
+     * 
      *
      * @param      vertexOne  The vertex one
      * @param      vertexTwo  The vertex two
@@ -88,6 +93,7 @@ class ListGraph {
     }
     /**
      * Returns a string representation of the object.
+     * Time complexity of this method is O(N)
      *
      * @return     String representation of the object.
      */
@@ -154,15 +160,16 @@ class MatrixGraph {
     }
     /**
      * Adds an edge.
+     * Time complexity of this method is O(N)
      *
-     * @param      v     { parameter_description }
-     * @param      w     { parameter_description }
+     * @param      vertexOne     vertexOne
+     * @param      vertexTwo     vertexTwo
      */
-    public void addEdge(final int v, final int w) {
-        if (v != w) {
-            if (!hasEdge(v, w)) {
-                graphMatrix[v][w] = 1;
-                graphMatrix[w][v] = 1;
+    public void addEdge(final int vertexOne, final int vertexTwo) {
+        if (vertexOne != vertexTwo) {
+            if (!hasEdge(vertexOne, vertexTwo)) {
+                graphMatrix[vertexOne][vertexTwo] = 1;
+                graphMatrix[vertexTwo][vertexOne] = 1;
                 edges++;
             }
         }
@@ -170,17 +177,20 @@ class MatrixGraph {
     }
     /**
      * Determines if it has edge.
+     * Time complexity of this method is O(N)
      *
-     * @param      v     { parameter_description }
-     * @param      w     { parameter_description }
+     * @param      vertexOne     vertexOne
+     * @param      vertexTwo     vertexTwo
      *
      * @return     True if has edge, False otherwise.
      */
-    public boolean hasEdge(final int v, final int w) {
-        return graphMatrix[v][w] == 1;
+    public boolean hasEdge(final int vertexOne, final int vertexTwo) {
+        return graphMatrix[vertexOne][vertexTwo] == 1;
     }
     /**
-     * { function_description }.
+     * this method prints all values.
+     * Time complexity of this method is O(N)
+     * 
      */
     public void print() {
         String str = "";
@@ -210,7 +220,7 @@ final class Solution {
 
     }
     /**
-     * { function_description }.
+     * this main method performs the operations.
      *
      * @param      args  The arguments
      */
