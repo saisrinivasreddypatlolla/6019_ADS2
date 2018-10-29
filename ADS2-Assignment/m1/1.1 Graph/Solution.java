@@ -47,7 +47,7 @@ class ListGraph {
     /**
      * Adds an edge.
      * Time complexity of this method is O(N)
-     * 
+     *
      *
      * @param      vertexOne  The vertex one
      * @param      vertexTwo  The vertex two
@@ -75,7 +75,7 @@ class ListGraph {
     /**
      * Determines if it has edge.
      * Time complexity of this method is O(N)
-     * 
+     *
      *
      * @param      vertexOne  The vertex one
      * @param      vertexTwo  The vertex two
@@ -190,7 +190,7 @@ class MatrixGraph {
     /**
      * this method prints all values.
      * Time complexity of this method is O(N)
-     * 
+     *
      */
     public void print() {
         String str = "";
@@ -241,5 +241,6 @@ final class Solution {
         }
     }
 }
+
 
 

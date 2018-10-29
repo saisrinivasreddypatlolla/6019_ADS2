@@ -1,7 +1,2 @@
 Starting audit...
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m1\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m1\1.1 Graph\Solution.java:50: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m1\1.1 Graph\Solution.java:78: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m1\1.1 Graph\Solution.java:193: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 4 errors.
