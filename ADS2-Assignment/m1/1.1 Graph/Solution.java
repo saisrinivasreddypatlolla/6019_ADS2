@@ -1,12 +1,35 @@
 import java.util.Scanner;
+/**
+ * Class for list graph.
+ */
 class ListGraph {
-	int vertices;
-	int edges;
-	Bag<Integer>[] adjacent;
+	/**
+	 * { var_description }.
+	 */
+	private int vertices;
+	/**
+	 * { var_description }.
+	 */
+	private int edges;
+	/**
+	 * { var_description }.
+	 */
+	private Bag<Integer>[] adjacent;
+	/**
+	 * { var_description }.
+	 */
 	private String[] tokens;
+	/**
+	 * Constructs the object.
+	 */
 	ListGraph() {
 
 	}
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      scan  The scan
+	 */
 	ListGraph(final Scanner scan) {
         this.vertices = Integer.parseInt(scan.nextLine());
         adjacent = (Bag<Integer>[]) new Bag[vertices];
@@ -20,7 +43,13 @@ class ListGraph {
             addEdge(Integer.parseInt(inputs[0]), Integer.parseInt(inputs[1]));
         }
     }
-	public void addEdge(int v, int w) {
+    /**
+     * Adds an edge.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     */
+	public void addEdge(final int v, final int w) {
 		if (v == w) {
             return;
         }
@@ -30,9 +59,24 @@ class ListGraph {
         adjacent[v].add(w);
         adjacent[w].add(v);
 	}
+	/**
+	 * { function_description }.
+	 *
+	 * @param      vertex  The vertex
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	 public Iterable<Integer> adj(final int vertex) {
         return adjacent[vertex];
     }
+    /**
+     * Determines if it has edge.
+     *
+     * @param      vertexOne  The vertex one
+     * @param      vertexTwo  The vertex two
+     *
+     * @return     True if has edge, False otherwise.
+     */
 	public boolean hasEdge(final int vertexOne,
         final int vertexTwo) {
         for (int each : adj(vertexOne))  {
@@ -42,6 +86,11 @@ class ListGraph {
         }
         return false;
     }
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         StringBuilder str = new StringBuilder();
         str.append(vertices + " vertices, " + edges + " edges" + "\n");
@@ -60,15 +109,38 @@ class ListGraph {
         }
     }
 }
+/**
+ * Class for matrix graph.
+ */
 class MatrixGraph {
+	/**
+	 * .
+	 */
 	private String[] tokens;
+	/**
+	 * .
+	 */
 	private int[][] graphMatrix;
+	/**
+	 * .
+	 */
 	private int vertices;
+	/**
+	 * .
+	 */
 	private int edges;
+	/**
+	 * Constructs the object.
+	 */
 	MatrixGraph() {
 
 	}
-	MatrixGraph(Scanner scan) {
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      scan  The scan
+	 */
+	MatrixGraph(final Scanner scan) {
 		this.vertices = Integer.parseInt(scan.nextLine());
 		graphMatrix = new int[vertices][vertices];
 		int edge = Integer.parseInt(scan.nextLine());
@@ -79,7 +151,13 @@ class MatrixGraph {
 		}
 
 	}
-	public void addEdge(int v, int w) {
+	/**
+	 * Adds an edge.
+	 *
+	 * @param      v     { parameter_description }
+	 * @param      w     { parameter_description }
+	 */
+	public void addEdge(final int v, final int w) {
 		if (v != w) {
 			if (!hasEdge(v, w)) {
 				graphMatrix[v][w] = 1;
@@ -89,9 +167,20 @@ class MatrixGraph {
 		}
 
 	}
-	public boolean hasEdge(int v, int w) {
+	/**
+	 * Determines if it has edge.
+	 *
+	 * @param      v     { parameter_description }
+	 * @param      w     { parameter_description }
+	 *
+	 * @return     True if has edge, False otherwise.
+	 */
+	public boolean hasEdge(final int v, final int w) {
 		return graphMatrix[v][w] == 1;
 	}
+	/**
+	 * { function_description }.
+	 */
 	public void print() {
 		String str = "";
 		str += vertices + " vertices, " + edges + " edges" + "\n";
@@ -108,11 +197,22 @@ class MatrixGraph {
 		}
 	}
 }
+/**
+ * Class for solution.
+ */
 class Solution {
+	/**
+	 * Constructs the object.
+	 */
 	private Solution() {
 
 	}
-	public static void main(String[] args) {
+	/**
+	 * { function_description }.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String type = scan.nextLine();
 		switch (type) {
