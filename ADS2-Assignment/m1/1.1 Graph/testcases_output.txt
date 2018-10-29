@@ -30,7 +30,7 @@ Goa: Delhi
 Gujarat: Delhi Haryana 
 Haryana: Gujarat Delhi
 ----------------------------------------
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 13 vertices, 13 edges
 0 1 1 0 0 1 1 0 0 0 0 0 0 
@@ -47,7 +47,7 @@ Expected Output:
 0 0 0 0 0 0 0 0 0 1 0 0 1 
 0 0 0 0 0 0 0 0 0 1 0 1 0
 Your Output: 
-13 vertices,13 edges
+13 vertices, 13 edges
 0 1 1 0 0 1 1 0 0 0 0 0 0 
 1 0 0 0 0 0 0 0 0 0 0 0 0 
 1 0 0 0 0 0 0 0 0 0 0 0 0 
@@ -140,7 +140,7 @@ Uttar Pradesh: West Bengal
 Uttarakhand: Assam 
 West Bengal: Uttar Pradesh Bihar
 ----------------------------------------
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 36 vertices, 72 edges
 0 1 1 0 0 1 1 0 0 0 0 1 1 0 0 1 1 0 0 0 0 1 1 0 0 1 1 0 0 0 0 0 0 0 0 0 
@@ -180,7 +180,7 @@ Expected Output:
 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0
 Your Output: 
-36 vertices,72 edges
+36 vertices, 72 edges
 0 1 1 0 0 1 1 0 0 0 0 1 1 0 0 1 1 0 0 0 0 1 1 0 0 1 1 0 0 0 0 0 0 0 0 0 
 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 
 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 
@@ -226,20 +226,20 @@ Your Output:
 1 vertices, 0 edges
 No edges
 ----------------------------------------
-########## Testcase 5: Failed ##########
+########## Testcase 5: Passed ##########
 Expected Output: 
 1 vertices, 0 edges
 No edges
 Your Output: 
-1 vertices,0 edges
+1 vertices, 0 edges
 No edges
 ----------------------------------------
-########## Testcase 6: Failed ##########
+########## Testcase 6: Passed ##########
 Expected Output: 
 0 vertices, 0 edges
 No edges
 Your Output: 
-0 vertices,0 edges
+0 vertices, 0 edges
 No edges
 ----------------------------------------
 ########## Testcase 7: Passed ##########

@@ -94,7 +94,7 @@ class MatrixGraph {
 	}
 	public void print() {
 		String str = "";
-		str += vertices + " vertices," + edges + " edges" + "\n";
+		str += vertices + " vertices, " + edges + " edges" + "\n";
 		if (edges > 0) {
 			for (int i = 0; i < graphMatrix.length; i++) {
 				for (int j = 0; j < graphMatrix[0].length; j++) {
