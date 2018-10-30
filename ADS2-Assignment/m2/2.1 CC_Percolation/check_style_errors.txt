@@ -1,8 +1,5 @@
 Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m2\2.1 CC_Percolation\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m2\2.1 CC_Percolation\Solution.java:40:36: '&&' should be on a new line. [OperatorWrap]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m2\2.1 CC_Percolation\Solution.java:45:42: '&&' should be on a new line. [OperatorWrap]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m2\2.1 CC_Percolation\Solution.java:50:36: '&&' should be on a new line. [OperatorWrap]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m2\2.1 CC_Percolation\Solution.java:55:42: '&&' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 2 errors.

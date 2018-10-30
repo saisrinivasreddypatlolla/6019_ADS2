@@ -42,18 +42,18 @@ class Perculation {
                         graphObj.addEdge(tmp,
                                          simplify(i - 1, j));
                     }
-                    if (i + 1 < vertices &&
-                            grid[i + 1][j]) {
+                    if (i + 1 < vertices
+                        && grid[i + 1][j]) {
                         graphObj.addEdge(
                             tmp, simplify(i + 1, j));
                     }
-                    if (j - 1 >= 0 &&
-                            grid[i][j - 1]) {
+                    if (j - 1 >= 0
+                        && grid[i][j - 1]) {
                         graphObj.addEdge(tmp,
                                          simplify(i, j - 1));
                     }
-                    if (j + 1 < vertices &&
-                            grid[i][j + 1]) {
+                    if (j + 1 < vertices
+                        && grid[i][j + 1]) {
                         graphObj.addEdge(
                             tmp, simplify(i, j + 1));
                     }
