@@ -1,10 +1,10 @@
 Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m2\2.1 CC_Percolation\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m2\2.1 CC_Percolation\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m2\2.1 CC_Percolation\Solution.java:38: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m2\2.1 CC_Percolation\Solution.java:38: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m2\2.1 CC_Percolation\Solution.java:42: Line is longer than 80 characters (found 85). [LineLength]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m2\2.1 CC_Percolation\Solution.java:44: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m2\2.1 CC_Percolation\Solution.java:50: Line is longer than 80 characters (found 85). [LineLength]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m2\2.1 CC_Percolation\Solution.java:52: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m2\2.1 CC_Percolation\Solution.java:77: Class Solution should be declared as final. [FinalClass]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m2\2.1 CC_Percolation\Solution.java:77: Missing a Javadoc comment. [JavadocType]
 Audit done.
 Checkstyle ends with 7 errors.

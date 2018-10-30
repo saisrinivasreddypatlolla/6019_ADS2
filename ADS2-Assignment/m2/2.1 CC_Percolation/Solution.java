@@ -34,20 +34,20 @@ class Perculation {
 						    tmp, vertices * vertices);
 					}
 					if (i == vertices - 1) {
-						graphObj.addEdge(
-						    tmp, vertices * vertices + 1);
+						graphObj.addEdge(tmp,
+						                 vertices * vertices + 1);
 					}
 					if (i - 1 >= 0 && grid[i - 1][j]) {
-						graphObj.addEdge(
-						    tmp, simplify(i - 1, j));
+						graphObj.addEdge(tmp,
+						                 simplify(i - 1, j));
 					}
 					if (i + 1 < vertices && grid[i + 1][j]) {
 						graphObj.addEdge(
 						    tmp, simplify(i + 1, j));
 					}
 					if (j - 1 >= 0 && grid[i][j - 1]) {
-						graphObj.addEdge(
-						    tmp, simplify(i, j - 1));
+						graphObj.addEdge(tmp,
+						                 simplify(i, j - 1));
 					}
 					if (j + 1 < vertices && grid[i][j + 1]) {
 						graphObj.addEdge(
@@ -74,7 +74,10 @@ class Perculation {
 		return row * vertices + column;
 	}
 }
-class Solution {
+/**
+ * Class for solution.
+ */
+final class Solution {
 	/**
 	 * Constructs the object.
 	 */
