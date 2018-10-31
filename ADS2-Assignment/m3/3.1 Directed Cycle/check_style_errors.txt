@@ -74,8 +74,12 @@ Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Solution.java:88:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Solution.java:91:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Solution.java:91:33: Parameter args should be final. [FinalParameters]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Solution.java:95:19: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Solution.java:95:35: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Solution.java:97:23: 'else' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Solution.java:97:23: '{' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 44 errors.
+Checkstyle ends with 48 errors.
 Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Stack.java:7: Line has trailing spaces. [RegexpSingleline]

@@ -91,9 +91,11 @@ final class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		DiGraph g = new DiGraph(scan);
-		System.out.println("hello2");
 		DirectedCycle obj = new DirectedCycle(g);
-		System.out.println("hello3");
-		System.out.println(obj.hasCycle());
+		if(obj.hasCycle()){
+			System.out.println("Cycle exists.");
+		} else{
+			System.out.println("Cycle doesn't exists.");
+		}
 	}
 }
