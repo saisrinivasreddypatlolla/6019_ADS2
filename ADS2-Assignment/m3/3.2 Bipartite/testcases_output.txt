@@ -3,7 +3,8 @@ Expected Output:
 Graph is bipartite
 
 Your Output: 
-
+Ans: false
+Graph is not a bipartite
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -11,7 +12,8 @@ Expected Output:
 Graph is bipartite
 
 Your Output: 
-
+Ans: false
+Graph is not a bipartite
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -19,7 +21,8 @@ Expected Output:
 Graph is bipartite
 
 Your Output: 
-
+Ans: false
+Graph is not a bipartite
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -27,7 +30,8 @@ Expected Output:
 Graph is not a bipartite
 
 Your Output: 
-
+Ans: false
+Graph is not a bipartite
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -35,6 +39,7 @@ Expected Output:
 Graph is not a bipartite
 
 Your Output: 
-
+Ans: false
+Graph is not a bipartite
 ----------------------------------------
 

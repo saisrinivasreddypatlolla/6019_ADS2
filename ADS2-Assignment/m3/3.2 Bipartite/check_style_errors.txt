@@ -31,5 +31,7 @@ Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:47:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:47:33: Parameter args should be final. [FinalParameters]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:54: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:57:43: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:57:44: '+' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 22 errors.
+Checkstyle ends with 24 errors.
