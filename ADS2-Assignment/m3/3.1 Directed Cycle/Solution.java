@@ -57,9 +57,6 @@ class DiGraph {
 		}
 	}
 	public void addEdge(int v1, int v2) {
-		if (v1 == v2) {
-			return;
-		}
 		if (!hasEdge(v1, v2)) {
 			edge++;
 		}
