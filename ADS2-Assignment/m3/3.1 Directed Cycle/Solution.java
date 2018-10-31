@@ -127,7 +127,7 @@ class DiGraph {
      * @param      vertexTwo    The vertexTwo
      */
     public void addEdge(final int vertexOne,
-        final int vertexTwo) {
+                        final int vertexTwo) {
         if (!hasEdge(vertexOne, vertexTwo)) {
             edge++;
         }
@@ -200,7 +200,7 @@ final class Solution {
         Scanner scan = new Scanner(System.in);
         DiGraph g = new DiGraph(scan);
         DirectedCycle obj = new DirectedCycle(g);
-        if(obj.hasCycle()) {
+        if (obj.hasCycle()) {
             System.out.println("Cycle exists.");
         } else {
             System.out.println("Cycle doesn't exists.");
