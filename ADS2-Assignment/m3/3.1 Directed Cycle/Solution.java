@@ -6,19 +6,19 @@ class DirectedCycle {
     /**
      * boolean array for marking the visit of node.
      */
-    boolean[] marked;
+    private boolean[] marked;
     /**
-     * boolean array if the node is in the stack
+     * boolean array if the node is in the stack.
      */
-    boolean[] onStack;
+    private boolean[] onStack;
     /**
      * array for the edge of that node.
      */
-    int[] edgeTo;
+    private int[] edgeTo;
     /**
      * stack object to store nodes.
      */
-    Stack<Integer> cycle;
+    private Stack<Integer> cycle;
     /**
      * Constructs the object.
      * Time complexity is O(V).
@@ -26,7 +26,7 @@ class DirectedCycle {
      *
      * @param      g     diGraph object
      */
-    public DirectedCycle(final DiGraph g) {
+    DirectedCycle(final DiGraph g) {
         marked  = new boolean[g.vertices()];
         onStack = new boolean[g.vertices()];
         edgeTo  = new int[g.vertices()];
@@ -50,8 +50,7 @@ class DirectedCycle {
         for (int w : g.adj(vertices)) {
             if (cycle != null) {
                 return;
-            }
-            else if (!marked[w]) {
+            } else if (!marked[w]) {
                 edgeTo[w] = vertices;
                 dfs(g, w);
             } else if (onStack[w]) {
@@ -70,7 +69,7 @@ class DirectedCycle {
      * Determines if it has cycle.
      * Time complexity of this method is O(1)
      *
-     * @return     True if has cycle, 
+     * @return     True if has cycle,
      *             False otherwise.
      */
     public boolean hasCycle() {
@@ -82,7 +81,7 @@ class DirectedCycle {
  */
 class DiGraph {
     /**
-     * number of vertices
+     * number of vertices.
      */
     private int vertices;
     /**
@@ -90,7 +89,7 @@ class DiGraph {
      */
     private int edges;
     /**
-     * edge count
+     * edge count.
      */
     private int edge = 0;
     /**
@@ -201,9 +200,9 @@ final class Solution {
         Scanner scan = new Scanner(System.in);
         DiGraph g = new DiGraph(scan);
         DirectedCycle obj = new DirectedCycle(g);
-        if(obj.hasCycle()){
+        if(obj.hasCycle()) {
             System.out.println("Cycle exists.");
-        } else{
+        } else {
             System.out.println("Cycle doesn't exists.");
         }
     }

@@ -1,40 +1,13 @@
 Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Bag.java:31: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Bag.java:35: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Bag.java:44: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Bag.java:48: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Bag.java:65: Expected @return tag. [JavadocMethod]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Bag.java:72: Expected @return tag. [JavadocMethod]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Bag.java:135: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Solution.java:9:15: Variable 'marked' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Solution.java:10: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Solution.java:13:15: Variable 'onStack' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Solution.java:17:11: Variable 'edgeTo' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Solution.java:21:20: Variable 'cycle' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Solution.java:29:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Solution.java:53:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Solution.java:73: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Solution.java:84: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Solution.java:92: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Solution.java:204:11: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Solution.java:204:27: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Solution.java:206:15: 'else' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Solution.java:206:15: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Solution.java:203:11: 'if' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 15 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Stack.java:42: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Stack.java:85: Expected @return tag. [JavadocMethod]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Stack.java:110: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Stack.java:125: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Stack.java:138: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Stack.java:160: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.1 Directed Cycle\Stack.java:186: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 1 errors.

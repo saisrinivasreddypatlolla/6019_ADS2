@@ -40,7 +40,7 @@ import java.util.NoSuchElementException;
  */
 public class Stack<Item> implements Iterable<Item> {
     /**
-     * size of the stack
+     * size of the stack.
      */
     private int size;
     /**
@@ -80,8 +80,10 @@ public class Stack<Item> implements Iterable<Item> {
     }
 
     /**
-      * Return the size of the stack.
-      */
+     * returns size of stack.
+     *
+     * @return     returns size of stack.
+     */
     public int size() {
         return size;
     }
@@ -107,7 +109,9 @@ public class Stack<Item> implements Iterable<Item> {
      * @return     returns the item which is deleted.
      */
     public Item pop() {
-        if (isEmpty()) throw new RuntimeException("Stack underflow");
+        if (isEmpty()) {
+            throw new RuntimeException("Stack underflow");
+        }
         Item item = first.item;        // save item to return
         first = first.next;            // delete first node
         size--;
@@ -122,7 +126,9 @@ public class Stack<Item> implements Iterable<Item> {
      * @return     returns last item in stack.
      */
     public Item peek() {
-        if (isEmpty()) throw new RuntimeException("Stack underflow");
+        if (isEmpty()) {
+            throw new RuntimeException("Stack underflow");
+        }
         return first.item;
     }
 
@@ -135,8 +141,9 @@ public class Stack<Item> implements Iterable<Item> {
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        for (Item item : this)
+        for (Item item : this) {
             s.append(item + " ");
+        }
         return s.toString();
     }
 
@@ -158,7 +165,7 @@ public class Stack<Item> implements Iterable<Item> {
      */
     private class ListIterator implements Iterator<Item> {
         /**
-         * current node
+         * current node.
          */
         private Node current = first;
         /**
@@ -183,7 +190,9 @@ public class Stack<Item> implements Iterable<Item> {
          * @return     returns the current node item.
          */
         public Item next() {
-            if (!hasNext()) throw new NoSuchElementException();
+            if (!hasNext()) {
+                throw new NoSuchElementException();
+            }
             Item item = current.item;
             current = current.next;
             return item;

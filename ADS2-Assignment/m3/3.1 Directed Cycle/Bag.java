@@ -29,11 +29,11 @@ import java.util.NoSuchElementException;
  */
 public class Bag<Item> implements Iterable<Item> {
     /**
-     * number of elements in bag
+     * number of elements in bag.
      */
     private int count;
     /**
-     * beginning of bag
+     * beginning of bag.
      */
     private Node first;
 
@@ -42,11 +42,11 @@ public class Bag<Item> implements Iterable<Item> {
      */
     private class Node {
         /**
-         * element in the node
+         * element in the node.
          */
         private Item item;
         /**
-         * next node address
+         * next node address.
          */
         private Node next;
     }
@@ -60,15 +60,19 @@ public class Bag<Item> implements Iterable<Item> {
     }
 
     /**
-      * Is the BAG empty?
-      */
+     * Determines if empty.
+     *
+     * @return     True if empty, False otherwise.
+     */
     public boolean isEmpty() {
         return first == null;
     }
 
     /**
-      * Return the number of items in the bag.
-      */
+     * returns the size of stack.
+     *
+     * @return     returns the size of stack
+     */
     public int size() {
         return count;
     }
@@ -132,7 +136,9 @@ public class Bag<Item> implements Iterable<Item> {
          * @return     returns the current node item.
          */
         public Item next() {
-            if (!hasNext()) throw new NoSuchElementException();
+            if (!hasNext()) {
+                throw new NoSuchElementException();
+            }
             Item item = current.item;
             current = current.next;
             return item;
