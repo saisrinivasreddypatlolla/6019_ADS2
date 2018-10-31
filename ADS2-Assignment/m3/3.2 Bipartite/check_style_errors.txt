@@ -9,26 +9,6 @@ Starting audit...
 Audit done.
 Checkstyle ends with 5 errors.
 Starting audit...
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Queue.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Queue.java:4: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Queue.java:8: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Queue.java:85: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Queue.java:94: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Queue.java:94: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Queue.java:105:25: Parameter item should be final. [FinalParameters]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Queue.java:108:24: '{' at column 24 should have line break after. [LeftCurly]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Queue.java:108:51: '}' at column 51 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Queue.java:109:24: '{' at column 24 should have line break after. [LeftCurly]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Queue.java:120: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Queue.java:124: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Queue.java:137: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Queue.java:140: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Queue.java:141: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Queue.java:151: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Queue.java:188: Line has trailing spaces. [RegexpSingleline]
-Audit done.
-Checkstyle ends with 17 errors.
-Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:2: Missing a Javadoc comment. [JavadocType]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:2:16: '{' is not preceded with whitespace. [WhitespaceAround]
@@ -50,9 +30,9 @@ Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:13:31: '<' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:13:32: '<' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:13:41: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:13:45: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:13:55: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:14:27: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:14:46: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:14:39: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:19:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:19:25: Parameter g should be final. [FinalParameters]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:19:34: Parameter vertices should be final. [FinalParameters]
@@ -72,5 +52,3 @@ Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:48:23: '{' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
 Checkstyle ends with 41 errors.
-Starting audit...
-Audit done.

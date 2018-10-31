@@ -10,9 +10,9 @@ class Bipartite{
 		color = new boolean[vertices];
 		edgeTo = new int[vertices];
 		flag = true;
-		for(int i =0;i<vertices;i++){
-			if(!marked[vertices]){
-				dfs(g, vertices);
+		for(int i =0;i<vertices;i = edgeTo[i]){
+			if(!marked[i]){
+				dfs(g, i);
 			}
 		}
 	}
