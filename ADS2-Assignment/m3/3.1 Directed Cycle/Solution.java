@@ -5,6 +5,7 @@ class DirectedCycle {
 	int[] edgeTo;
 	Stack<Integer> cycle = new Stack<Integer>();
 	public DirectedCycle(DiGraph g) {
+		System.out.println(g.V());
 		marked  = new boolean[g.V()];
 		onStack = new boolean[g.V()];
 		edgeTo  = new int[g.V()];
