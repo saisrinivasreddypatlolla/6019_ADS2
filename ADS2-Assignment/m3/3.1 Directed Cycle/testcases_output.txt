@@ -3,8 +3,9 @@ Expected Output:
 Cycle doesn't exists.
 
 Your Output: 
-13
-true
+hello2
+hello3
+false
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -12,8 +13,9 @@ Expected Output:
 Cycle doesn't exists.
 
 Your Output: 
-13
-true
+hello2
+hello3
+false
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -21,7 +23,8 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-13
+hello2
+hello3
 true
 ----------------------------------------
 
@@ -30,8 +33,9 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-1
-true
+hello2
+hello3
+false
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -39,7 +43,8 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-4
+hello2
+hello3
 true
 ----------------------------------------
 
@@ -48,7 +53,8 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-13
+hello2
+hello3
 true
 ----------------------------------------
 
@@ -57,8 +63,9 @@ Expected Output:
 Cycle doesn't exists.
 
 Your Output: 
-3
-true
+hello2
+hello3
+false
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -66,7 +73,8 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-3
+hello2
+hello3
 true
 ----------------------------------------
 

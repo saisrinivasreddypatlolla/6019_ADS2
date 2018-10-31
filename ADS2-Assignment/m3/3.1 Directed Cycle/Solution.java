@@ -1,27 +1,30 @@
 import java.util.Scanner;
+import java.util.*;
 class DirectedCycle {
 	boolean[] marked;
 	boolean[] onStack;
 	int[] edgeTo;
-	Stack<Integer> cycle = new Stack<Integer>();
+	Stack<Integer> cycle;
 	public DirectedCycle(DiGraph g) {
-		System.out.println(g.V());
 		marked  = new boolean[g.V()];
 		onStack = new boolean[g.V()];
 		edgeTo  = new int[g.V()];
-		for (int v = 0; v < g.V(); v++)
+		for (int v = 0; v < g.V(); v++) {
 			if (!marked[v] && cycle == null) {
 				dfs(g, v);
 			}
+		}
 	}
-	private void dfs(DiGraph G, int v) {
+	private void dfs(DiGraph g, int v) {
 		onStack[v] = true;
 		marked[v] = true;
-		for (int w : G.adj(v)) {
-			if (cycle != null) return;
+		for (int w : g.adj(v)) {
+			if (cycle != null) {
+				return;
+			}
 			else if (!marked[w]) {
 				edgeTo[w] = v;
-				dfs(G, w);
+				dfs(g, w);
 			} else if (onStack[w]) {
 				cycle = new Stack<Integer>();
 				for (int x = v; x != w; x = edgeTo[x]) {
@@ -32,10 +35,11 @@ class DirectedCycle {
 			}
 		}
 		onStack[v] = false;
+
 	}
 	public boolean hasCycle() {
-        return cycle != null;
-    }
+		return cycle != null;
+	}
 }
 class DiGraph {
 	int v, e, edge = 0;
@@ -80,14 +84,16 @@ class DiGraph {
 		return adj[vertex];
 	}
 }
-final class Solution{
-	private Solution(){
+final class Solution {
+	private Solution() {
 
 	}
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		DiGraph g = new DiGraph(scan);
+		System.out.println("hello2");
 		DirectedCycle obj = new DirectedCycle(g);
+		System.out.println("hello3");
 		System.out.println(obj.hasCycle());
 	}
 }
