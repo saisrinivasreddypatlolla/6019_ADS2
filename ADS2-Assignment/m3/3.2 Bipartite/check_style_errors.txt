@@ -46,9 +46,9 @@ Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:38:27: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:41:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:41:33: Parameter args should be final. [FinalParameters]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:46:19: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:46:38: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:48:23: 'else' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:48:23: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:47:19: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:47:38: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:49:23: 'else' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:49:23: '{' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
 Checkstyle ends with 41 errors.

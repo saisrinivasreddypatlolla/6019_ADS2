@@ -41,6 +41,7 @@ class Solution{
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int vertices = Integer.parseInt(scan.nextLine());
+		int edges = Integer.parseInt(scan.nextLine());
 		Graph g = new Graph(vertices);
 		Bipartite obj = new Bipartite(g);
 		if(obj.isBipartite()){
