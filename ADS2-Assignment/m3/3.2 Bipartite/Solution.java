@@ -50,7 +50,8 @@ class Solution {
 		int edges = Integer.parseInt(scan.nextLine());
 		Graph g = new Graph(vertices);
 		for (int i = 0; i < edges; i++) {
-			g.addEdge(scan.nextInt(), scan.nextInt());
+			String[] t = scan.nextLine().split(" ");
+			g.addEdge(Integer.parseInt(t[0]), Integer.parseInt(t[1]));
 		}
 		Bipartite obj = new Bipartite(g);
 		if (obj.isBipartite()) {
