@@ -13,7 +13,7 @@ class Bipartite {
 	 */
 	private boolean[] color;
 	/**
-	 * flag to check graph is bipartite or not. 
+	 * flag to check graph is bipartite or not.
 	 */
 	private boolean flag;
 	/**
@@ -41,8 +41,8 @@ class Bipartite {
 	}
 	/**
 	 * this method performs dfs for the given graph.
-     * Time complexity is O(E)
-     * E is the number of edges.
+	 * Time complexity is O(E)
+	 * E is the number of edges.
 	 *
 	 * @param      g         graph object
 	 * @param      vertices  The vertices
@@ -92,7 +92,8 @@ final class Solution {
 		Graph g = new Graph(vertices);
 		for (int i = 0; i < edges; i++) {
 			String[] t = scan.nextLine().split(" ");
-			g.addEdge(Integer.parseInt(t[0]), Integer.parseInt(t[1]));
+			g.addEdge(Integer.parseInt(
+			              t[0]), Integer.parseInt(t[1]));
 		}
 		Bipartite obj = new Bipartite(g);
 		if (obj.isBipartite()) {

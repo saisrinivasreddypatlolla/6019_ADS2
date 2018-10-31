@@ -17,6 +17,8 @@ public class Graph {
 
     /**
      * Create an empty graph with V vertices.
+     * Time complexity is O(V)
+     * V is number of vertices.
      * @param     vertex     Vertex
      */
     public Graph(final int vertex) {
@@ -50,6 +52,7 @@ public class Graph {
 
     /**
      * Add the edge vertex-w to graph.
+     * Time complexity is O(1).
      * @param      vertexOne  Vertex one
      * @param      vertexTwo  Vertex two
      */
@@ -62,6 +65,7 @@ public class Graph {
 
     /**
      * Return the list of neighbors of vertex vertex as in Iterable.
+     * Time complexity is O(1).
      * @param      vertex    Vertex
      * @return     Iterable
      */
@@ -69,3 +73,4 @@ public class Graph {
         return adj[vertex];
     }
 }
+

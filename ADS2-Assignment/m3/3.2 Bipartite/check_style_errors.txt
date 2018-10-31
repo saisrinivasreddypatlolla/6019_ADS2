@@ -1,13 +1,8 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+Audit done.
+Starting audit...
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 Audit done.
 Checkstyle ends with 1 errors.
-Starting audit...
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:16: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:95: Line is longer than 80 characters (found 82). [LineLength]
-Audit done.
-Checkstyle ends with 4 errors.
