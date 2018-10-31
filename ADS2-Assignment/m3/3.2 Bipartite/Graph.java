@@ -50,8 +50,8 @@ public class Graph {
 
     /**
      * Add the edge vertex-w to graph.
-     * @param      vertex       Vertex vertex
-     * @param       w      Vertex w
+     * @param      vertexOne  Vertex one
+     * @param      vertexTwo  Vertex two
      */
     public void addEdge(final int vertexOne,
                         final int vertexTwo) {

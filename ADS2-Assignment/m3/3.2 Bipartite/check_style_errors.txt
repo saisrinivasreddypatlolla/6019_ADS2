@@ -2,34 +2,12 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Graph.java:53:8: Unused @param tag for 'vertex'. [JavadocMethod]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Graph.java:54:8: Unused @param tag for 'w'. [JavadocMethod]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Graph.java:56:35: Expected @param tag for 'vertexOne'. [JavadocMethod]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Graph.java:57:35: Expected @param tag for 'vertexTwo'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:6: First sentence should end with a period. [JavadocStyle]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:9:19: Variable 'marked' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:10:16: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:10:19: Variable 'color' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:11:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:11:17: Variable 'flag' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:12:12: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:12:15: Variable 'edgeTo' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:13:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:13:19: Parameter g should be final. [FinalParameters]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:25:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:25:25: Parameter g should be final. [FinalParameters]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:25:34: Parameter vertices should be final. [FinalParameters]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:39:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:43: Class Solution should be declared as final. [FinalClass]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:43: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:44:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:47:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:47:33: Parameter args should be final. [FinalParameters]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:54: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:16: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m3\3.2 Bipartite\Solution.java:95: Line is longer than 80 characters (found 82). [LineLength]
 Audit done.
-Checkstyle ends with 22 errors.
+Checkstyle ends with 4 errors.
