@@ -24,12 +24,12 @@ class Bipartite {
 	}
 	public void dfs(Graph g, int vertices) {
 		marked[vertices] = true;
-		color[vertices] = true;
 		for (int w : g.adj(vertices)) {
 			if (!flag) {
 				return;
 			} else if (!marked[w]) {
 				edgeTo[w] = vertices;
+				color[w] = !color[vertices];
 				dfs(g, w);
 			} else if (color[w] == color[vertices]) {
 				flag = false;
@@ -54,7 +54,6 @@ class Solution {
 			g.addEdge(Integer.parseInt(t[0]), Integer.parseInt(t[1]));
 		}
 		Bipartite obj = new Bipartite(g);
-		System.out.println("Ans: "+obj.isBipartite());
 		if (obj.isBipartite()) {
 			System.out.println("Graph is bipartite");
 		} else {
