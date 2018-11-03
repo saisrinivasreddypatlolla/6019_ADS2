@@ -1,9 +1,28 @@
 import java.util.Scanner;
+/**
+ * Class for page rank.
+ */
 class PageRank {
+	/**
+	 * array for the page ranks.
+	 */
 	double[] pageRank;
+	/**
+	 * digraph onject.
+	 */
 	Digraph graph;
+	/**
+	 * previous ranks array.
+	 */
 	double[] prevRank;
-	PageRank(Digraph g) {
+	/**
+	 * Constructs the object.
+	 * Time complexities is O(V)
+	 * V is number of vertices.
+	 *
+	 * @param      g     digraph object.
+	 */
+	PageRank(final Digraph g) {
 		graph = g;
 		int vertices = graph.V();
 		pageRank = new double[vertices];
@@ -13,29 +32,51 @@ class PageRank {
 		}
 
 	}
-	public double getPR(int vertex) {
+	/**
+	 * Gets the pr.
+	 * Time complexities is O(E).
+	 * E is number of adjacent values to that vertex.
+	 *
+	 * @param      vertex  The vertex
+	 *
+	 * @return     The pr.
+	 */
+	public double getPR(final int vertex) {
 		double sum = 0;
-		for (int i : graph.adj(vertex)) {
-			if (graph.outdegree(i) == 0) {
-				sum = 0;
-			} else {
-				sum += (prevRank[i] / graph.outdegree(i));
+		int[] values = new int[graph.V()];
+		for (int v : graph.adj(vertex)) {
+			if (graph.indegree(v) == 0) {
+				return 0;
 			}
+			sum += (prevRank[v] / graph.outdegree(v));
 		}
 		return sum;
-
 	}
+
+
+	/**
+	 * this method to perform to add the pagerank to that vertex.
+	 * time complexity is O(V*1000)
+	 * V is number of vertices.
+	 */
 	public void add() {
 		for (int i = 0; i < 1000; i++) {
 			for (int j = 0; j < graph.V(); j++) {
 				prevRank[j] = pageRank[j];
 				pageRank[j] = getPR(j);
-				if(prevRank[j] == pageRank[j]){
-					break;
-				}
+				// if(prevRank[j] == pageRank[j]){
+				// 	break;
+				// }
 			}
 		}
 	}
+	/**
+	 * Returns a string representation of the object.
+	 * Time complexity is O(V).
+	 * V is number of vertices
+	 *
+	 * @return     String representation of the object.
+	 */
 	public String toString() {
 		String str = "";
 		for (int i = 0; i < graph.V(); i++) {
@@ -50,9 +91,16 @@ class WebSearch {
 
 }
 
-
+/**
+ * Class for solution.
+ */
 public class Solution {
-	public static void main(String[] args) {
+	/**
+	 * main method to perform operations.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int vertices = Integer.parseInt(scan.nextLine());
 		Digraph graph = new Digraph(vertices);
