@@ -15,12 +15,13 @@ class PageRank {
 	}
 	public double getPR(int vertex) {
 		double sum = 0;
+		if (graph.adj(vertex).equals("null")) {
+			return 0;
+		}
 		for (int i : graph.adj(vertex)) {
-			if (graph.outdegree(i) == 0) {
-				return 0;
-			} else {
-				sum += (prevRank[i] / graph.outdegree(i));
-			}
+
+			sum += (prevRank[i] / graph.outdegree(i));
+
 		}
 		pageRank[vertex] = sum;
 		return pageRank[vertex];
@@ -31,7 +32,7 @@ class PageRank {
 			for (int j = 0; j < graph.V(); j++) {
 				prevRank[j] = pageRank[j];
 				pageRank[j] = getPR(j);
-				if(prevRank[j] == pageRank[j]){
+				if (prevRank[j] == pageRank[j]) {
 					break;
 				}
 			}
