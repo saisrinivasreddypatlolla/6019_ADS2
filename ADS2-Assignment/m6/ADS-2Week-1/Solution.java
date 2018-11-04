@@ -47,7 +47,7 @@ class PageRank {
 		double sum = 0;
 		int[] values = new int[graph.V()];
 		for (int v : revGraph.adj(vertex)) {
-			if (graph.outdegree(v) == 0) {
+			if (graph.indegree(v) == 0) {
 				return 0;
 			}
 			sum += (prevRank[v] / graph.outdegree(v));
