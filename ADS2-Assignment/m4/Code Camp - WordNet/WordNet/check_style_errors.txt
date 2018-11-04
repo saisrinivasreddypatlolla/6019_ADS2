@@ -1,27 +1,20 @@
 Starting audit...
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-Audit done.
-Checkstyle ends with 1 errors.
-Starting audit...
 Audit done.
 Starting audit...
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Digraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
+Starting audit...
+Audit done.
 Starting audit...
 Audit done.
 Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:186:39: 'first' hides a field. [HiddenField]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:184:12: Unused @param tag for 'first'. [JavadocMethod]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:186:39: Expected @param tag for 'first1'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 2 errors.
-Starting audit...
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-Audit done.
-Checkstyle ends with 1 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
+Starting audit...
+Audit done.
