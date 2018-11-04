@@ -46,7 +46,7 @@ public class Digraph {
      *Time complexity : O(1).
      * @return the number of vertices in this digraph
      */
-    public int V() {
+    public int vertices() {
         return v;
     }
 

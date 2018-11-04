@@ -31,7 +31,7 @@ final class Solution {
         switch (type) {
         case "Graph":
             DirectedCycle obj1 = new DirectedCycle(dig);
-            for (int i = 0; i < dig.V(); i++) {
+            for (int i = 0; i < dig.vertices(); i++) {
                 int outdegree = dig.outdegree(i);
                 if (outdegree == 0) {
                     count++;

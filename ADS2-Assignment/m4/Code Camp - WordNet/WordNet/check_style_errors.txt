@@ -3,79 +3,51 @@ Starting audit...
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:50: Line is longer than 80 characters (found 82). [LineLength]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:116:24: Parameter vertex should be final. [FinalParameters]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:116:35: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:175: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:191: Line is longer than 80 characters (found 94). [LineLength]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Digraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Digraph.java:49:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:5: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:9: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:29: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:32: Line is longer than 80 characters (found 106). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:41:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:42:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:43:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:46: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:47:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:48:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:85: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:94:25: Parameter item should be final. [FinalParameters]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:99: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:100: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:111: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:115: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:131: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:134: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:136: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:139: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:143: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:144:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:146:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:146:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:146:29: Parameter first should be final. [FinalParameters]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:146:40: 'first' hides a field. [HiddenField]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:150: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:150:35: '{' at column 35 should have line break after. [LeftCurly]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:151: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:151:35: '{' at column 35 should have line break after. [LeftCurly]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:153:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:154: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:156: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:58:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:59:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:96: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:105:25: Parameter item should be final. [FinalParameters]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:110: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:111: 'else' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:149: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:151: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:158: Missing a Javadoc comment. [JavadocType]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:159:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:161:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:161:9: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:161:29: Parameter first should be final. [FinalParameters]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:161:40: 'first' hides a field. [HiddenField]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:165:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:168:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:172:9: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 34 errors.
+Checkstyle ends with 18 errors.
 Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:3:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:3:13: Variable 'graph' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:5:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:5:16: Parameter G should be final. [FinalParameters]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:5:24: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:12: Line is longer than 80 characters (found 105). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:15: Line is longer than 80 characters (found 107). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:16: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:16:5: Class 'SAP' looks like designed for extension (can be subclassed), but the method 'length' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SAP' final or making the method 'length' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:16:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:16:25: Parameter listOne should be final. [FinalParameters]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:16:53: Parameter listTwo should be final. [FinalParameters]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:19:12: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:20:16: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:21: Line is longer than 80 characters (found 100). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:22: Line is longer than 80 characters (found 100). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:23:16: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:24:19: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:26:23: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:38: Line is longer than 80 characters (found 92). [LineLength]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:9:13: Variable 'graph' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:27:25: Parameter listOne should be final. [FinalParameters]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:28:9: Parameter listTwo should be final. [FinalParameters]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:31:12: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:32:16: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:37:16: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:38:19: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:40:23: 'if' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 22 errors.
+Checkstyle ends with 9 errors.
 Starting audit...
 Audit done.
 Starting audit...
