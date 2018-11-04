@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 /**
  * Class for page rank.
  */
@@ -30,8 +31,24 @@ class PageRank {
 		pageRank = new double[vertices];
 		prevRank = new double[vertices];
 		for (int i = 0; i < vertices; i++) {
-			prevRank[i] = (double)1 / vertices;
+			pageRank[i] = (double)1 / vertices;
 		}
+		for (int i = 0; i < graph.V(); i++) {
+            if (graph.outdegree(i) == 0) {
+                for (int j = 0; j < graph.V(); j++) {
+                    if (j != i) {
+                        graph.addEdge(i, j);
+                    }
+                }
+            }
+        }
+        // values = new Double[graph.V()];
+        for (int i = 0; i < 1000; i++) {
+            for (int j = 0; j < graph.V(); j++) {
+                getPR(j);
+            }
+            pageRank = Arrays.copyOf(prevRank, prevRank.length);
+        }
 
 	}
 	/**
@@ -115,7 +132,7 @@ public class Solution {
 		}
 		System.out.println(graph);
 		PageRank pageObj = new PageRank(graph);
-		pageObj.add();
+		// pageObj.add();
 		System.out.println(pageObj.toString());
 		// while (scan.hasNext()) {
 
