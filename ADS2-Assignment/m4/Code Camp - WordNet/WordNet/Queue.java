@@ -55,7 +55,13 @@ public class Queue<Item> implements Iterable<Item> {
      * @param      <Item>  The item
      */
     private static class Node<Item> {
+        /**
+         * item of the node.
+         */
         private Item item;
+        /**
+         * link of next node.
+         */
         private Node<Item> next;
     }
 
@@ -93,7 +99,9 @@ public class Queue<Item> implements Iterable<Item> {
      * @throws NoSuchElementException if this queue is empty
      */
     public Item peek() {
-        if (isEmpty()) throw new NoSuchElementException("Queue underflow");
+        if (isEmpty()) {
+            throw new NoSuchElementException("Queue underflow");
+        }
         return first.item;
     }
 
@@ -102,13 +110,17 @@ public class Queue<Item> implements Iterable<Item> {
      *
      * @param  item the item to add
      */
-    public void enqueue(Item item) {
+    public void enqueue(final Item item) {
         Node<Item> oldlast = last;
         last = new Node<Item>();
         last.item = item;
         last.next = null;
-        if (isEmpty()) first = last;
-        else           oldlast.next = last;
+        if (isEmpty()) {
+            first = last;
+        }
+        else           {
+            oldlast.next = last;
+        }
         n++;
     }
 
@@ -134,7 +146,8 @@ public class Queue<Item> implements Iterable<Item> {
     /**
      * Returns a string representation of this queue.
      *
-     * @return the sequence of items in FIFO order, separated by spaces
+     * @return the sequence of items in FIFO order,
+     * separated by spaces
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
@@ -146,29 +159,53 @@ public class Queue<Item> implements Iterable<Item> {
     }
 
     /**
-     * Returns an iterator that iterates over the items in this queue in FIFO order.
+     * Returns an iterator that iterates over
+     * the items in this queue in FIFO order.
      *
-     * @return an iterator that iterates over the items in this queue in FIFO order
+     * @return an iterator that iterates over
+     * the items in this queue in FIFO order
      */
     public Iterator<Item> iterator()  {
         return new ListIterator<Item>(first);
     }
-
-    // an iterator, doesn't implement remove() since it's optional
+    /**
+     * Class for list iterator.
+     *
+     * @param      <Item>  The item
+     */
     private class ListIterator<Item> implements Iterator<Item> {
+        /**
+         * current node.
+         */
         private Node<Item> current;
 
-        public ListIterator(Node<Item> first) {
+        /**
+         * Constructs the object.
+         *
+         * @param      first  The first
+         */
+        public ListIterator(final Node<Item> first) {
             current = first;
         }
-
+        /**
+         * Determines if it has next.
+         *
+         * @return     True if has next, False otherwise.
+         */
         public boolean hasNext()  {
             return current != null;
         }
+        /**
+         * remove method.
+         */
         public void remove() {
             throw new UnsupportedOperationException();
         }
-
+        /**
+         * next method.
+         *
+         * @return     returns this item.
+         */
         public Item next() {
             if (!hasNext()) {
                 throw new NoSuchElementException();

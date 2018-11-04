@@ -6,7 +6,7 @@ public class SAP {
     /**
      * graph object.
      */
-    Digraph graph;
+    private Digraph graph;
     /**
      * Constructs the object.
      *
@@ -24,30 +24,30 @@ public class SAP {
      *
      * @return     returns the shortest path of both vertices.
      */
-    public int[] length(ArrayList<Integer> listOne,
-        ArrayList<Integer> listTwo) {
+    public int[] length(final ArrayList<Integer> listOne,
+                        final ArrayList<Integer> listTwo) {
         int min = graph.vertices();
         int tempOne = 0;
-        for(int i = 0; i < listOne.size(); i++) {
-            for(int k = 0; k < listTwo.size(); k++) {
-            BreadthFirstDirectedPaths bfsOne =
-            new BreadthFirstDirectedPaths(graph, listOne.get(i));
-            BreadthFirstDirectedPaths bfsTwo =
-            new BreadthFirstDirectedPaths(graph, listTwo.get(k));
-            for(int j = 0; j < graph.vertices(); j++) {
-                if(bfsOne.hasPathTo(j) && bfsTwo.hasPathTo(j)) {
-                    int sum = bfsOne.getDist(j) + bfsTwo.getDist(j);
-                    if(sum < min) {
-                        min = sum;
-                        tempOne = j;
+        for (int i = 0; i < listOne.size(); i++) {
+            for (int k = 0; k < listTwo.size(); k++) {
+                BreadthFirstDirectedPaths bfsOne =
+                    new BreadthFirstDirectedPaths(graph, listOne.get(i));
+                BreadthFirstDirectedPaths bfsTwo =
+                    new BreadthFirstDirectedPaths(graph, listTwo.get(k));
+                for (int j = 0; j < graph.vertices(); j++) {
+                    if (bfsOne.hasPathTo(j) && bfsTwo.hasPathTo(j)) {
+                        int sum = bfsOne.getDist(j) + bfsTwo.getDist(j);
+                        if (sum < min) {
+                            min = sum;
+                            tempOne = j;
+                        }
                     }
                 }
             }
         }
+        int[] result = {min, tempOne};
+        return result;
     }
-    int[] result = {min, tempOne};
-    return result;
-        }
 
 
 }

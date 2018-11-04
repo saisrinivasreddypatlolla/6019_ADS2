@@ -17,37 +17,15 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:58:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:59:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:96: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:105:25: Parameter item should be final. [FinalParameters]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:110: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:111: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:149: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:151: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:158: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:159:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:161:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:161:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:161:29: Parameter first should be final. [FinalParameters]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:161:40: 'first' hides a field. [HiddenField]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:165:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:168:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:172:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:120:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:187:9: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:187:46: 'first' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 18 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:9:13: Variable 'graph' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:27:25: Parameter listOne should be final. [FinalParameters]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:28:9: Parameter listTwo should be final. [FinalParameters]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:31:12: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:32:16: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:37:16: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:38:19: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:40:23: 'if' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
