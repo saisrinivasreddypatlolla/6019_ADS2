@@ -1,9 +1,4 @@
 import java.io.File;
-import java.io.FileReader;
-import java.util.Scanner;
-import java.util.HashMap;
-import java.io.File;
-import java.io.FileReader;
 import java.util.Scanner;
 import java.util.HashMap;
 import java.util.ArrayList;
