@@ -78,28 +78,15 @@ Audit done.
 Checkstyle ends with 22 errors.
 Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Solution.java:10:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Solution.java:59: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Solution.java:61: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Solution.java:69:47: ';' is preceded with whitespace. [NoWhitespaceBefore]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Solution.java:71: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Solution.java:92:17: Variable 'graph' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Solution.java:97:45: Variable 'map' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Solution.java:102:45: Variable 'revmap' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Solution.java:125: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Solution.java:126: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Solution.java:127: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Solution.java:129: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Solution.java:132: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Solution.java:140: Line is longer than 80 characters (found 94). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Solution.java:144: Line is longer than 80 characters (found 97). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Solution.java:171: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Solution.java:172: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Solution.java:173: Line is longer than 80 characters (found 128). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Solution.java:188: Expected @return tag. [JavadocMethod]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Solution.java:195: Expected @return tag. [JavadocMethod]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Solution.java:69:31: ';' is preceded with whitespace. [NoWhitespaceBefore]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Solution.java:92:13: Variable 'graph' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Solution.java:97:41: Variable 'map' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Solution.java:102:41: Variable 'revmap' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Solution.java:150:62: '<' is preceded with whitespace. [GenericWhitespace]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Solution.java:151:32: '>' is preceded with whitespace. [GenericWhitespace]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Solution.java:151:35: '(' is preceded with whitespace. [MethodParamPad]
 Audit done.
-Checkstyle ends with 21 errors.
+Checkstyle ends with 8 errors.
 Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
