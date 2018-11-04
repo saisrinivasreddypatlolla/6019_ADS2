@@ -8,8 +8,7 @@ import java.util.Scanner;
 import java.util.HashMap;
 import java.util.ArrayList;
 import java.io.FileNotFoundException;
-// import java.util.Arrays;
-class Example {
+class Solution {
 	public static void main(String[] args) {
 		int count = 0;
 		Scanner scan = new Scanner(System.in);
