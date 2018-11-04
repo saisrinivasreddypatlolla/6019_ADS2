@@ -111,6 +111,8 @@ class Synset {
     }
     /**
      * Adds a synset.
+     * Time complexity of this method is O(V)
+     * V is number of vertices.
      *
      * @param      file1  The file 1
      */
@@ -162,6 +164,10 @@ class Synset {
     }
     /**
      * Adds a hypenym.
+     * time complexity of this method is
+     * O(E).
+     * E is number of edges.
+     * 
      *
      * @param      file2  The file 2
      *
