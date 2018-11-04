@@ -10,12 +10,12 @@ final class Solution {
 	/**
 	 * Constructs the object.
 	 */
-	private Solution(){
+	private Solution() {
 
 	}
 	/**
 	 * thie main method performs the operations.
-	 * 
+	 *
 	 *
 	 * @param      args  The arguments
 	 */
@@ -51,16 +51,21 @@ final class Solution {
 			while (scan.hasNext()) {
 				String[] tokens = scan.nextLine().split(" ");
 				if (tokens[0].equals("null")) {
-					System.out.println("IllegalArgumentException");
+					System.out.println(
+					    "IllegalArgumentException");
 					return;
 				}
 				SAP obj2 = new SAP(dig);
-				ArrayList<Integer> vertexOne = obj.getRevmap().get(tokens[0]);
-				ArrayList<Integer> vertexTwo = obj.getRevmap().get(tokens[1]);
+				ArrayList<Integer> vertexOne = obj.getRevmap().get(
+				                                   tokens[0]);
+				ArrayList<Integer> vertexTwo = obj.getRevmap().get(
+				                                   tokens[1]);
 				int[] array = obj2.length(vertexOne, vertexTwo);
-				ArrayList<String> result = obj.getMap().get(array[1]);
+				ArrayList<String> result = obj.getMap().get(
+				                               array[1]);
 				String tmp = result.get(0);
-				System.out.print("distance = " + array[0] + ", ancestor = ");
+				System.out.print(
+				    "distance = " + array[0] + ", ancestor = ");
 				for (int k = 0 ; k < result.size(); k++) {
 					if (k != result.size() - 1) {
 						System.out.print(result.get(k) + " ");
@@ -70,6 +75,8 @@ final class Solution {
 				}
 				System.out.println();
 			}
+			break;
+		default:
 			break;
 		}
 	}
@@ -178,14 +185,14 @@ class Synset {
 	 * returns the hash map of integer and array list of
 	 * strings.
 	 */
-	public HashMap<Integer, ArrayList<String>> getMap(){
+	public HashMap<Integer, ArrayList<String>> getMap() {
 		return map;
 	}
 	/**
 	 * returns the hash map of Strings and array list of
-	 * integers. 
+	 * integers.
 	 */
-	public HashMap<String, ArrayList<Integer>> getRevmap(){
+	public HashMap<String, ArrayList<Integer>> getRevmap() {
 		return revmap;
 	}
 }
