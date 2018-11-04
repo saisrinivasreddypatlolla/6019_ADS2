@@ -30,7 +30,7 @@ class PageRank {
 		pageRank = new double[vertices];
 		prevRank = new double[vertices];
 		for (int i = 0; i < vertices; i++) {
-			pageRank[i] = (double)1 / vertices;
+			prevRank[i] = (double)1 / vertices;
 		}
 
 	}
