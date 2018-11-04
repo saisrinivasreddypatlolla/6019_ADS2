@@ -66,7 +66,7 @@ final class Solution {
                 String tmp = result.get(0);
                 System.out.print(
                     "distance = " + array[0] + ", ancestor = ");
-                for (int k = 0 ; k < result.size(); k++) {
+                for (int k = 0; k < result.size(); k++) {
                     if (k != result.size() - 1) {
                         System.out.print(result.get(k) + " ");
                     } else {
@@ -89,17 +89,17 @@ class Synset {
     /**
      * Digraph object.
      */
-    Digraph graph;
+    private Digraph graph;
     /**
      * hashmap with interger as key and array list of strings
      * values.
      */
-    HashMap<Integer, ArrayList<String>> map;
+    private HashMap<Integer, ArrayList<String>> map;
     /**
      * hashmap with strings as key and array list of integers
      * values.
      */
-    HashMap<String, ArrayList<Integer>> revmap;
+    private HashMap<String, ArrayList<Integer>> revmap;
     /**
      * Constructs the object.
      */
@@ -147,8 +147,8 @@ class Synset {
                         revVal.add(key);
                         revmap.put(value, revVal);
                     } else {
-                        ArrayList<Integer> it = new ArrayList <
-                        Integer > ();
+                        ArrayList<Integer> it = new ArrayList
+                        <Integer>();
                         it.add(key);
                         revmap.put(value, it);
                     }
