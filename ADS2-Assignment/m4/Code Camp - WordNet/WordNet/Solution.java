@@ -29,6 +29,7 @@ class Solution {
 			}
 			if (count > 1) {
 				System.out.println("Multiple Roots");
+				return;
 			}
 			if (obj1.hasCycle()) {
 				System.out.println("Cycle detected");
