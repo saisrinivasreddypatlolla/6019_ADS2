@@ -31,7 +31,7 @@ class PageRank {
 		pageRank = new double[vertices];
 		prevRank = new double[vertices];
 		for (int i = 0; i < vertices; i++) {
-			pageRank[i] = (double)1 / vertices;
+			prevRank[i] = (double)1 / vertices;
 		}
 		for (int i = 0; i < graph.V(); i++) {
             if (graph.outdegree(i) == 0) {
@@ -62,11 +62,12 @@ class PageRank {
 	 */
 	public double getPR(final int vertex) {
 		double sum = 0;
-		int[] values = new int[graph.V()];
+		// int[] values = new int[graph.V()];
+		if (graph.indegree(vertex) == 0) {
+            pageRank[vertex] = 0.0;
+            return pageRank[vertex];
+        }
 		for (int v : revGraph.adj(vertex)) {
-			if (graph.indegree(v) == 0) {
-				return 0;
-			}
 			sum += (prevRank[v] / graph.outdegree(v));
 		}
 		return sum;
