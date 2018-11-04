@@ -8,8 +8,23 @@ import java.util.Scanner;
 import java.util.HashMap;
 import java.util.ArrayList;
 import java.io.FileNotFoundException;
-class Solution {
-	public static void main(String[] args) {
+/**
+ * Class for solution.
+ */
+final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution(){
+
+	}
+	/**
+	 * thie main method performs the operations.
+	 * 
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		int count = 0;
 		Scanner scan = new Scanner(System.in);
 		String file1 = scan.nextLine();
@@ -65,18 +80,37 @@ class Solution {
 	}
 
 }
-
+/**
+ * Class for synset.
+ */
 class Synset {
+	/**
+	 * Digraph object.
+	 */
 	Digraph graph;
+	/**
+	 * hashmap with interger as key and array list of strings
+	 * values.
+	 */
 	HashMap<Integer, ArrayList<String>> map;
+	/**
+	 * hashmap with strings as key and array list of integers
+	 * values.
+	 */
 	HashMap<String, ArrayList<Integer>> revmap;
+	/**
+	 * Constructs the object.
+	 */
 	Synset() {
 		map = new HashMap<Integer, ArrayList<String>>();
 		revmap = new HashMap<String, ArrayList<Integer>>();
-
-
 	}
-	public void addSynset(String file1) {
+	/**
+	 * Adds a synset.
+	 *
+	 * @param      file1  The file 1
+	 */
+	public void addSynset(final String file1) {
 		try {
 			File file = new File("Files");
 			File[] fileList = file.listFiles();
@@ -117,7 +151,14 @@ class Synset {
 			System.out.println(e);
 		}
 	}
-	public Digraph addHypenym(String file2) {
+	/**
+	 * Adds a hypenym.
+	 *
+	 * @param      file2  The file 2
+	 *
+	 * @return     the directed graph object.
+	 */
+	public Digraph addHypenym(final String file2) {
 		try {
 			File files = new File("Files");
 			File[] filelist2 = files.listFiles();
@@ -138,9 +179,17 @@ class Synset {
 		}
 		return graph;
 	}
+	/**
+	 * returns the hash map of integer and array list of
+	 * strings.
+	 */
 	public HashMap<Integer, ArrayList<String>> getMap(){
 		return map;
 	}
+	/**
+	 * returns the hash map of Strings and array list of
+	 * integers. 
+	 */
 	public HashMap<String, ArrayList<Integer>> getRevmap(){
 		return revmap;
 	}
