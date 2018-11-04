@@ -167,7 +167,7 @@ class Synset {
      * time complexity of this method is
      * O(E).
      * E is number of edges.
-     * 
+     *
      *
      * @param      file2  The file 2
      *
