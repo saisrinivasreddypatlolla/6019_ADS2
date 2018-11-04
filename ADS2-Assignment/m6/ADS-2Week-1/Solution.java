@@ -15,6 +15,7 @@ class PageRank {
 	 * previous ranks array.
 	 */
 	double[] prevRank;
+	Digraph revGraph;
 	/**
 	 * Constructs the object.
 	 * Time complexities is O(V)
@@ -24,6 +25,7 @@ class PageRank {
 	 */
 	PageRank(final Digraph g) {
 		graph = g;
+		revGraph = g.reverse();
 		int vertices = graph.V();
 		pageRank = new double[vertices];
 		prevRank = new double[vertices];
@@ -44,8 +46,8 @@ class PageRank {
 	public double getPR(final int vertex) {
 		double sum = 0;
 		int[] values = new int[graph.V()];
-		for (int v : graph.adj(vertex)) {
-			if (graph.indegree(v) == 0) {
+		for (int v : revGraph.adj(vertex)) {
+			if (graph.outdegree(v) == 0) {
 				return 0;
 			}
 			sum += (prevRank[v] / graph.outdegree(v));
