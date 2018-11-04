@@ -3,12 +3,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:50: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:116:24: Parameter vertex should be final. [FinalParameters]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:175: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:191: Line is longer than 80 characters (found 94). [LineLength]
 Audit done.
-Checkstyle ends with 4 errors.
 Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Digraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
@@ -17,11 +12,9 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:120:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:187:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:187:46: 'first' hides a field. [HiddenField]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\Queue.java:186:39: 'first' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m4\Code Camp - WordNet\WordNet\SAP.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.

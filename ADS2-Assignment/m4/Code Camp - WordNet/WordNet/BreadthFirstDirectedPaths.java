@@ -9,15 +9,15 @@ public class BreadthFirstDirectedPaths {
     /**
      * marked array.
      */
-    private boolean[] marked;  // marked[v] = is there an s->v path?
+    private boolean[] marked;
     /**
      * edge to array.
      */
-    private int[] edgeTo;      // edgeTo[v] = last edge on shortest s->v path
+    private int[] edgeTo;
     /**
      * distTo array.
      */
-    private int[] distTo;      // distTo[v] = length of shortest s->v path
+    private int[] distTo;
 
     /**
      * Computes the shortest path from
@@ -47,7 +47,8 @@ public class BreadthFirstDirectedPaths {
      *         {@code sources} satisfies {@code 0 <= v < V}
      */
     public BreadthFirstDirectedPaths(final
-                                     Digraph g, final Iterable<Integer> sources) {
+                                     Digraph g,
+                                     final Iterable<Integer> sources) {
         marked = new boolean[g.vertices()];
         distTo = new int[g.vertices()];
         edgeTo = new int[g.vertices()];
@@ -113,7 +114,7 @@ public class BreadthFirstDirectedPaths {
      *
      * @return     The distance.
      */
-    public int getDist(int vertex) {
+    public int getDist(final int vertex) {
         return distTo[vertex];
     }
 
@@ -171,8 +172,9 @@ public class BreadthFirstDirectedPaths {
     private void validateVertex(final int v) {
         int ve = marked.length;
         if (v < 0 || v >= ve) {
-            throw new IllegalArgumentException("vertex "
-                                               + v + " is not between 0 and " + (v - 1));
+            throw new IllegalArgumentException(
+                "vertex "
+                + v + " is not between 0 and " + (v - 1));
         }
     }
     /**
@@ -187,8 +189,9 @@ public class BreadthFirstDirectedPaths {
         int ve = marked.length;
         for (int v : vertices) {
             if (v < 0 || v >= v) {
-                throw new IllegalArgumentException("vertex "
-                                                   + v + " is not between 0 and " + (ve - 1));
+                throw new IllegalArgumentException(
+                    "vertex "
+                    + v + " is not between 0 and " + (ve - 1));
             }
         }
     }

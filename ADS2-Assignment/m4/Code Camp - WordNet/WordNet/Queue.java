@@ -117,8 +117,7 @@ public class Queue<Item> implements Iterable<Item> {
         last.next = null;
         if (isEmpty()) {
             first = last;
-        }
-        else           {
+        } else           {
             oldlast.next = last;
         }
         n++;
@@ -184,7 +183,7 @@ public class Queue<Item> implements Iterable<Item> {
          *
          * @param      first  The first
          */
-        public ListIterator(final Node<Item> first) {
+        ListIterator(final Node<Item> first) {
             current = first;
         }
         /**
