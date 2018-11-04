@@ -290,16 +290,15 @@ Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m6\ADS-2Week-1\Solution.java:18:18: Variable 'prevRank' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m6\ADS-2Week-1\Solution.java:19:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m6\ADS-2Week-1\Solution.java:19:17: Variable 'revGraph' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m6\ADS-2Week-1\Solution.java:34:47: 'typecast' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m6\ADS-2Week-1\Solution.java:46:29: '1000' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m6\ADS-2Week-1\Solution.java:82:37: '1000' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m6\ADS-2Week-1\Solution.java:109: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m6\ADS-2Week-1\Solution.java:116:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m6\ADS-2Week-1\Solution.java:140: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m6\ADS-2Week-1\Solution.java:147: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m6\ADS-2Week-1\Solution.java:157: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m6\ADS-2Week-1\Solution.java:83:37: '1000' is a magic number. [MagicNumber]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m6\ADS-2Week-1\Solution.java:110: Missing a Javadoc comment. [JavadocType]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m6\ADS-2Week-1\Solution.java:117:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m6\ADS-2Week-1\Solution.java:141: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m6\ADS-2Week-1\Solution.java:148: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m6\ADS-2Week-1\Solution.java:158: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 15 errors.
+Checkstyle ends with 14 errors.
 Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m6\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m6\ADS-2Week-1\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
