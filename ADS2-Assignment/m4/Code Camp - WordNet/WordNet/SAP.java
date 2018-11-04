@@ -14,13 +14,13 @@ public class SAP {
 
     // // length of shortest ancestral path between any vertex in v and any vertex in w; -1 if no such path
     public int[] length(ArrayList<Integer> listOne, ArrayList<Integer> listTwo) {
-        int min = graph.vertices();
+        int min = graph.V();
         int tempOne = 0;
         for(int i = 0; i < listOne.size(); i++) {
             for(int k = 0; k < listTwo.size(); k++) {
             BreadthFirstDirectedPaths bfsOne = new BreadthFirstDirectedPaths(graph, listOne.get(i));
             BreadthFirstDirectedPaths bfsTwo = new BreadthFirstDirectedPaths(graph, listTwo.get(k));
-            for(int j = 0; j < graph.vertices(); j++) {
+            for(int j = 0; j < graph.V(); j++) {
                 if(bfsOne.hasPathTo(j) && bfsTwo.hasPathTo(j)) {
                     int sum = bfsOne.distTo[j] + bfsTwo.distTo[j];
                     if(sum < min) {

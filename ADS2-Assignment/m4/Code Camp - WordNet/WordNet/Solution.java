@@ -22,7 +22,7 @@ class Example {
 		switch (type) {
 		case "Graph":
 			DirectedCycle obj1 = new DirectedCycle(dig);
-			for (int i = 0; i < dig.vertices(); i++) {
+			for (int i = 0; i < dig.V(); i++) {
 				int outdegree = dig.outdegree(i);
 				if (outdegree == 0) {
 					count++;
