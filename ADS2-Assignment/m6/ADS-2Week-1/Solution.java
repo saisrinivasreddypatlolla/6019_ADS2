@@ -26,7 +26,6 @@ class PageRank {
 	 */
 	PageRank(final Digraph g) {
 		graph = g;
-		revGraph = g.reverse();
 		int vertices = graph.V();
 		pageRank = new double[vertices];
 		prevRank = new double[vertices];
@@ -67,7 +66,7 @@ class PageRank {
 			prevRank[vertex] = 0;
             return prevRank[vertex];
         }
-		for (int v : revGraph.adj(vertex)) {
+		for (int v : graph.reverse().adj(vertex)) {
 			sum += (pageRank[v] / graph.outdegree(v));
 		}
 		prevRank[vertex] = sum;
