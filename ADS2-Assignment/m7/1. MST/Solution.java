@@ -10,7 +10,9 @@ final class Solution {
 
     }
     /**
-     * { function_description }.
+     * main method to perform operations.
+     * Time complexity of this method is O(E).
+     * E is number of edges.
      *
      * @param      args  The arguments
      */
@@ -38,23 +40,23 @@ final class Solution {
  */
 class Edge implements Comparable<Edge> {
     /**
-     * { var_description }.
+     * first vertex to connect.
      */
     private int vertexOne;
     /**
-     * { var_description }.
+     * second vertex connect from first one.
      */
     private int vertexTwo;
     /**
-     * { var_description }.
+     * weight of the edge.
      */
     private double weight;
     /**
      * Constructs the object.
      *
-     * @param      v     { parameter_description }
-     * @param      w     { parameter_description }
-     * @param      wei   The wei
+     * @param      v     first vertex
+     * @param      w     second vertex
+     * @param      wei   The weight
      */
     Edge(final int v, final int w, final double wei) {
         this.vertexOne = v;
@@ -62,19 +64,19 @@ class Edge implements Comparable<Edge> {
         this.weight = wei;
     }
     /**
-     * { function_description }.
+     * returns first end of edge.
      *
-     * @return     { description_of_the_return_value }
+     * @return     returns first end of edge.
      */
     public int either() {
         return vertexOne;
     }
     /**
-     * { function_description }.
+     * returns other end of edge.
      *
-     * @param      v     { parameter_description }
+     * @param      v     connected vertex.
      *
-     * @return     { description_of_the_return_value }
+     * @return      returns other end of edge.
      */
     public int other(final int v) {
         if (vertexOne == v) {
@@ -83,11 +85,11 @@ class Edge implements Comparable<Edge> {
         return vertexOne;
     }
     /**
-     * { function_description }.
+     * compares both edges weight.
      *
      * @param      that  The that
      *
-     * @return     { description_of_the_return_value }
+     * @return     returns integer value.
      */
     public int compareTo(final Edge that) {
         if (this.weight < that.weight) {
@@ -111,17 +113,17 @@ class Edge implements Comparable<Edge> {
  */
 class EdgeWeightedGraph {
     /**
-     * .
+     * vertices of the graph.
      */
     private int vertices;
     /**
-     * .
+     * adjacent list of one vertex.
      */
     private Bag<Edge>[] adj;
     /**
      * Constructs the object.
      *
-     * @param      v     { parameter_description }
+     * @param      v     vertices input.
      */
     EdgeWeightedGraph(final int v) {
         this.vertices = v;
@@ -133,7 +135,7 @@ class EdgeWeightedGraph {
     /**
      * Adds an edge.
      *
-     * @param      e     { parameter_description }
+     * @param      e     edge.
      */
     public void addEdge(final Edge e) {
         int first = e.either();
@@ -142,9 +144,11 @@ class EdgeWeightedGraph {
         adj[second].add(e);
     }
     /**
-     * { function_description }.
+     * returns iterable of edge.
+     * Time complexity is O(E).
+     * E is the number of edges.
      *
-     * @return     { description_of_the_return_value }
+     * @return     returns iterable of edge.
      */
     public Iterable<Edge> edges() {
         Bag<Edge> list = new Bag<Edge>();
@@ -156,19 +160,21 @@ class EdgeWeightedGraph {
         return list;
     }
     /**
-     * { function_description }.
+     * returns iterable of vertices.
+     * Time complexity is O(V).
+     * V is number of vertices.
      *
      * @param      vertex  The vertex
      *
-     * @return     { description_of_the_return_value }
+     * @return     returns iterable of vertices.
      */
     public Iterable<Edge> adj(final int vertex) {
         return adj[vertex];
     }
     /**
-     * { function_description }.
+     * returns the vertices of the graph.
      *
-     * @return     { description_of_the_return_value }
+     * @return     returns the vertices of the graph.
      */
     public int vertices() {
         return this.vertices;
@@ -188,9 +194,9 @@ class MSTree {
      */
     private Queue<Edge> mst;
     /**
-     *intializes  the values.
-     *time complexity is O(ElogE).
-     *where e is the edges.
+     * intializes  the values.
+     * time complexity is O(ElogE).
+     * E is number of edges.
      * @param      g  graph object.
      */
     MSTree(final EdgeWeightedGraph g) {
@@ -213,7 +219,7 @@ class MSTree {
         }
     }
     /**
-     *it returns all the edges on mst.
+     * it returns all the edges on mst.
      *
      * @return  queue which contains all
      * vertices.
@@ -222,9 +228,9 @@ class MSTree {
         return mst;
     }
     /**
-     *this method returns the total weight.
-     *of mst.
-     *time complexity is O(E)
+     * this method returns the total weight.
+     * of mst.
+     * time complexity is O(E)
      * @return weight of mst.
      */
     public double total() {
