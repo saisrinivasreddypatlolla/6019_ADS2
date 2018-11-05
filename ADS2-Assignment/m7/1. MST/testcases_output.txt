@@ -3,15 +3,19 @@ Expected Output:
 614708.00000
 
 Your Output: 
-
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 131072
+	at MinPQ.resize(MinPQ.java:61)
+	at MinPQ.delMin(MinPQ.java:90)
+	at MSTree.<init>(Solution.java:111)
+	at Solution.main(Solution.java:20)
 ----------------------------------------
 
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 1.81000
 
 Your Output: 
-
+1.81000
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -19,7 +23,11 @@ Expected Output:
 10.46351
 
 Your Output: 
-
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2048
+	at MinPQ.resize(MinPQ.java:61)
+	at MinPQ.delMin(MinPQ.java:90)
+	at MSTree.<init>(Solution.java:111)
+	at Solution.main(Solution.java:20)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -27,7 +35,11 @@ Expected Output:
 37.00000
 
 Your Output: 
-
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 16
+	at MinPQ.resize(MinPQ.java:61)
+	at MinPQ.delMin(MinPQ.java:90)
+	at MSTree.<init>(Solution.java:111)
+	at Solution.main(Solution.java:20)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -35,7 +47,11 @@ Expected Output:
 19.00000
 
 Your Output: 
-
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 8
+	at MinPQ.resize(MinPQ.java:61)
+	at MinPQ.delMin(MinPQ.java:90)
+	at MSTree.<init>(Solution.java:111)
+	at Solution.main(Solution.java:20)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -43,6 +59,10 @@ Expected Output:
 2.00000
 
 Your Output: 
-
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
+	at MinPQ.resize(MinPQ.java:61)
+	at MinPQ.delMin(MinPQ.java:90)
+	at MSTree.<init>(Solution.java:111)
+	at Solution.main(Solution.java:20)
 ----------------------------------------
 
