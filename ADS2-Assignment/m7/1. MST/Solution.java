@@ -1,9 +1,20 @@
 import java.util.Scanner;
+/**
+ * Class for solution.
+ */
 class Solution {
+	/**
+	 * Constructs the object.
+	 */
 	private Solution() {
 
 	}
-	public static void main(String[] args) {
+	/**
+	 * { function_description }.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int vertices = Integer.parseInt(scan.nextLine());
         int edges = Integer.parseInt(scan.nextLine());
@@ -22,50 +33,114 @@ class Solution {
         System.out.format("%.5f", result);
 	}
 }
+/**
+ * Class for edge.
+ */
 class Edge implements Comparable<Edge> {
-	int vertexOne;
-	int vertexTwo;
-	double weight;
-	Edge(int v, int w, double wei) {
+	/**
+	 * { var_description }.
+	 */
+	private int vertexOne;
+	/**
+	 * { var_description }.
+	 */
+	private int vertexTwo;
+	/**
+	 * { var_description }.
+	 */
+	private double weight;
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      v     { parameter_description }
+	 * @param      w     { parameter_description }
+	 * @param      wei   The wei
+	 */
+	Edge(final int v, final int w, final double wei) {
 		this.vertexOne = v;
 		this.vertexTwo = w;
 		this.weight = wei;
 	}
+	/**
+	 * { function_description }.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public int either() {
 		return vertexOne;
 	}
-	public int other(int v) {
+	/**
+	 * { function_description }.
+	 *
+	 * @param      v     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	public int other(final int v) {
 		if (vertexOne == v) {
 			return vertexTwo;
 		} return vertexOne;
 	}
-	public int compareTo(Edge that) {
+	/**
+	 * { function_description }.
+	 *
+	 * @param      that  The that
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	public int compareTo(final Edge that) {
 		if (this.weight < that.weight) {
 			return -1;
 		} else if (this.weight > that.weight) {
 			return 1;
 		} return 0;
 	}
+	/**
+	 * Gets the weight.
+	 *
+	 * @return     The weight.
+	 */
 	public double getWeight(){
 		return this.weight;
 	}
 }
+/**
+ * Class for edge weighted graph.
+ */
 class EdgeWeightedGraph {
-	int vertices;
-	Bag<Edge>[] adj;
-	EdgeWeightedGraph(int v) {
+	/**
+	 * .
+	 */
+	private int vertices;
+	private Bag<Edge>[] adj;
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      v     { parameter_description }
+	 */
+	EdgeWeightedGraph(final int v) {
 		this.vertices = v;
 		adj = new Bag[vertices];
 		for (int i = 0; i < vertices; i++) {
 			adj[i] = new Bag<Edge>();
 		}
 	}
-	public void addEdge(Edge e) {
+	/**
+	 * Adds an edge.
+	 *
+	 * @param      e     { parameter_description }
+	 */
+	public void addEdge(final Edge e) {
 		int first = e.either();
 		int second = e.other(first);
 		adj[first].add(e);
 		adj[second].add(e);
 	}
+	/**
+	 * { function_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public Iterable<Edge> edges() {
 		Bag<Edge> list = new Bag<Edge>();
 		for (int i = 0; i < vertices; i++) {
@@ -75,6 +150,13 @@ class EdgeWeightedGraph {
 		}
 		return list;
 	}
+	/**
+	 * { function_description }
+	 *
+	 * @param      vertex  The vertex
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public Iterable<Edge> adj(final int vertex) {
         return adj[vertex];
     }
