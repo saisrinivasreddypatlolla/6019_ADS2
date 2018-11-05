@@ -6,18 +6,10 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m7\1. MST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m7\1. MST\Solution.java:5: Class Solution should be declared as final. [FinalClass]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m7\1. MST\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m7\1. MST\Solution.java:82:17: '}' at column 3 should be alone on a line. [RightCurly]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m7\1. MST\Solution.java:96:17: '}' at column 3 should be alone on a line. [RightCurly]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m7\1. MST\Solution.java:103:34: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m7\1. MST\Solution.java:115:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m7\1. MST\Solution.java:139: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m7\1. MST\Solution.java:153: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m7\1. MST\Solution.java:163:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m7\1. MST\Solution.java:168: Missing a Javadoc comment. [JavadocType]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m7\1. MST\Solution.java:105:30: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m7\1. MST\Solution.java:168:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m7\1. MST\UF.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
