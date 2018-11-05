@@ -102,7 +102,7 @@ class Edge implements Comparable<Edge> {
      *
      * @return     The weight.
      */
-    public double getWeight(){
+    public double getWeight() {
         return this.weight;
     }
 }
@@ -165,6 +165,11 @@ class EdgeWeightedGraph {
     public Iterable<Edge> adj(final int vertex) {
         return adj[vertex];
     }
+    /**
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int vertices() {
         return this.vertices;
     }

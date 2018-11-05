@@ -5,12 +5,6 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m7\1. MST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m7\1. MST\Solution.java:105:30: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m7\1. MST\Solution.java:168:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 3 errors.
 Starting audit...
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m7\1. MST\UF.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
