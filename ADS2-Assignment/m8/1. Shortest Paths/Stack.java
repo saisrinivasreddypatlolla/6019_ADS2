@@ -87,7 +87,7 @@ public class Stack<Item> implements Iterable<Item> {
      *
      * @param  item the item to add
      */
-    public void push(Item item) {
+    public void push(final Item item) {
         Node<Item> oldfirst = first;
         first = new Node<Item>();
         first.item = item;
@@ -102,7 +102,9 @@ public class Stack<Item> implements Iterable<Item> {
      * @throws NoSuchElementException if this stack is empty
      */
     public Item pop() {
-        if (isEmpty()) throw new NoSuchElementException("Stack underflow");
+        if (isEmpty()) {
+            throw new NoSuchElementException("Stack underflow");
+        }
         Item item = first.item;        // save item to return
         first = first.next;            // delete first node
         n--;
@@ -117,7 +119,9 @@ public class Stack<Item> implements Iterable<Item> {
      * @throws NoSuchElementException if this stack is empty
      */
     public Item peek() {
-        if (isEmpty()) throw new NoSuchElementException("Stack underflow");
+        if (isEmpty()) {
+            throw new NoSuchElementException("Stack underflow");
+        }
         return first.item;
     }
 
@@ -162,7 +166,7 @@ public class Stack<Item> implements Iterable<Item> {
         /**
          * Constructs the object.
          *
-         * @param      first  The first
+         * @param      first1  The first
          */
         ListIterator(final Node<Item> first1) {
             current = first1;

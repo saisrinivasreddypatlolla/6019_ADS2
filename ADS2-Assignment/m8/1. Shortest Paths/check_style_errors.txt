@@ -106,15 +106,8 @@ Starting audit...
 Audit done.
 Checkstyle ends with 102 errors.
 Starting audit...
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m8\1. Shortest Paths\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m8\1. Shortest Paths\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m8\1. Shortest Paths\Stack.java:90:22: Parameter item should be final. [FinalParameters]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m8\1. Shortest Paths\Stack.java:105: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m8\1. Shortest Paths\Stack.java:120: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m8\1. Shortest Paths\Stack.java:165:12: Unused @param tag for 'first'. [JavadocMethod]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m8\1. Shortest Paths\Stack.java:167:39: Expected @param tag for 'first1'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 1 errors.
