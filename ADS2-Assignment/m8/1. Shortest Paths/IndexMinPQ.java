@@ -46,22 +46,23 @@ public class IndexMinPQ<Key extends Comparable<Key>>
      * Initializes an empty indexed priority queue
      * with indices between {@code 0}
      * and {@code maxN - 1}.
-     * @param  maxN the keys on this priority
+     * @param  maxN1 the keys on this priority
      * queue are index from {@code 0}
      *         {@code maxN - 1}
      * @throws IllegalArgumentException if {@code maxN < 0}
      */
-    public IndexMinPQ(final int maxN) {
-        if (maxN < 0) {
+    public IndexMinPQ(final int maxN1) {
+        if (maxN1 < 0) {
             throw new IllegalArgumentException();
         }
-        this.maxN = maxN;
+        this.maxN = maxN1;
         n = 0;
         keys = (Key[]) new Comparable[maxN + 1];
         pq   = new int[maxN + 1];
         qp   = new int[maxN + 1];
-        for (int i = 0; i <= maxN; i++)
+        for (int i = 0; i <= maxN; i++) {
             qp[i] = -1;
+        }
     }
 
     /**
@@ -310,7 +311,7 @@ public class IndexMinPQ<Key extends Comparable<Key>>
      * @throws NoSuchElementException no
      * key is associated with index {@code i}
      */
-    public void delete(int i) {
+    public void delete(final int i) {
         if (i < 0 || i >= maxN) {
             throw new IllegalArgumentException();
         }
@@ -374,15 +375,19 @@ public class IndexMinPQ<Key extends Comparable<Key>>
         int k = ke;
         while (2 * k <= n) {
             int j = 2 * k;
-            if (j < n && greater(j, j + 1)) j++;
-            if (!greater(k, j)) break;
+            if (j < n && greater(j, j + 1)) {
+                j++;
+            }
+            if (!greater(k, j)) {
+                break;
+            }
             exch(k, j);
             k = j;
         }
     }
 
 
-    
+
     /**
      * Returns an iterator that iterates over the keys on the
      * priority queue in ascending order.
@@ -395,7 +400,9 @@ public class IndexMinPQ<Key extends Comparable<Key>>
     public Iterator<Integer> iterator() {
         return new HeapIterator();
     }
-
+    /**
+     * Class for heap iterator.
+     */
     private class HeapIterator implements Iterator<Integer> {
         /**
          * create a new pq.
@@ -407,8 +414,9 @@ public class IndexMinPQ<Key extends Comparable<Key>>
          */
         public HeapIterator() {
             copy = new IndexMinPQ<Key>(pq.length - 1);
-            for (int i = 1; i <= n; i++)
+            for (int i = 1; i <= n; i++) {
                 copy.insert(pq[i], keys[pq[i]]);
+            }
         }
         /**
          * Determines if it has next.
@@ -418,7 +426,10 @@ public class IndexMinPQ<Key extends Comparable<Key>>
         public boolean hasNext()  {
             return !copy.isEmpty();
         }
-        public void remove()      {
+        /**
+         * remove method.
+         */
+        public void remove() {
             throw new UnsupportedOperationException();
         }
         /**

@@ -1,19 +1,9 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m8\1. Shortest Paths\IndexMinPQ.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m8\1. Shortest Paths\IndexMinPQ.java:54:33: 'maxN' hides a field. [HiddenField]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m8\1. Shortest Paths\IndexMinPQ.java:63: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m8\1. Shortest Paths\IndexMinPQ.java:313:24: Parameter i should be final. [FinalParameters]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m8\1. Shortest Paths\IndexMinPQ.java:377: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m8\1. Shortest Paths\IndexMinPQ.java:378: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m8\1. Shortest Paths\IndexMinPQ.java:385: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m8\1. Shortest Paths\IndexMinPQ.java:399: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m8\1. Shortest Paths\IndexMinPQ.java:408:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m8\1. Shortest Paths\IndexMinPQ.java:410: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m8\1. Shortest Paths\IndexMinPQ.java:421:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m8\1. Shortest Paths\IndexMinPQ.java:415:9: Redundant 'public' modifier. [RedundantModifier]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
