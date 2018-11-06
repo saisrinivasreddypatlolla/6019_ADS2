@@ -183,7 +183,7 @@ class DijkstraSP {
             distTo[i] = Double.POSITIVE_INFINITY;
         }
         distTo[source] = 0.0;
-        pq = new IndexMinPQ<Double>(graph.vertices());
+        pq = new IndexMinPQ<Double>(g.vertices());
         pq.insert(source, distTo[source]);
         while (!pq.isEmpty()) {
             int vertex = pq.delMin();
