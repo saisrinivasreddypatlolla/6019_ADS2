@@ -173,7 +173,7 @@ class DijkstraSP {
      * @param      source  The source
      */
     DijkstraSP(final EdgeWeightedGraph g,
-                final int source) {
+               final int source) {
         distTo = new Double[g.vertices()];
         edgeTo = new Edge[g.vertices()];
         for (int i = 0; i < g.vertices(); i++) {
@@ -196,7 +196,7 @@ class DijkstraSP {
      * @param      vertex  The vertex
      */
     private void relax(final Edge edge,
-    final int vertex) {
+                       final int vertex) {
         int vertexTwo = edge.other(vertex);
         if (distTo[vertexTwo] > distTo[vertex] + edge.getWeight()) {
             distTo[vertexTwo] = distTo[vertex] + edge.getWeight();
@@ -267,11 +267,11 @@ class DijkstraSP {
 /**
  * Class for solution.
  */
-class Solution{
+final class Solution {
     /**
      * Constructs the object.
      */
-    private Solution(){
+    private Solution() {
 
     }
     /**
@@ -283,27 +283,27 @@ class Solution{
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         HashMap<String, Integer> map = new HashMap<String, Integer>();
         String[] inputs = scan.nextLine().split(" ");
         int vertices = Integer.parseInt(inputs[0]);
         int edges = Integer.parseInt(inputs[1]);
         String[] cities = scan.nextLine().split(" ");
-        for(int i=0;i<vertices;i++){
+        for (int i = 0; i < vertices; i++) {
             map.put(cities[i], i);
         }
         Edge obj;
         EdgeWeightedGraph graph = new EdgeWeightedGraph(vertices);
-        for(int i =0;i<edges;i++){
+        for (int i = 0; i < edges; i++) {
             String[] routes = scan.nextLine().split(" ");
-            obj = new Edge(map.get(routes[0]),map.get(routes[1]),
-                Double.parseDouble(routes[2]));
+            obj = new Edge(map.get(routes[0]), map.get(routes[1]),
+                           Double.parseDouble(routes[2]));
             graph.addEdge(obj);
         }
         int numQueries = Integer.parseInt(scan.nextLine());
         DijkstraSP dObj;
-        for(int i = 0;i<numQueries;i++){
+        for (int i = 0; i < numQueries; i++) {
             String[] queries = scan.nextLine().split(" ");
             int source = map.get(queries[0]);
             dObj = new DijkstraSP(graph, source);
