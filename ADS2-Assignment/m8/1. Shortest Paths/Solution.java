@@ -147,31 +147,28 @@ class EdgeWeightedGraph {
 
 }
 /**
- *the class for dijkstra's algorithm.
- *to find the shortest path.
+ * Class for dijkstra sp.
  */
 class DijkstraSP {
     /**
-     *the distTo array to store.
-     *distance from one vertex to another.
+     * distance of the edge from vetrex1 to vertex 2.
      */
     private Double[] distTo;
     /**
-     *edge to is to store the edge connected.
+     *  to store edge object.
      */
     private Edge[] edgeTo;
     /**
-     *indexed minpq to store the key value.
-     *pair.
+     * Index min pQ to store the weights of edges.
      */
     private IndexMinPQ<Double> pq;
     /**
-     *the graph object.
+     * edgeweightedgraph object.
      */
     private EdgeWeightedGraph graph;
     /**
-     *the constructor to initialize the objects.
-     *the time complexity is O(E + V).
+     * The constructor to initialize the objects.
+     * The time complexity is O(E + V).
      * @param      g  graph object.
      * @param      source  The source
      */
@@ -193,8 +190,8 @@ class DijkstraSP {
         }
     }
     /**
-     *this method is to relax the edges.
-     *time complexity is O(logE)
+     * This method is to relax the edges.
+     * Time complexity is O(logE)
      * @param      edge    The edge
      * @param      vertex  The vertex
      */
@@ -212,8 +209,7 @@ class DijkstraSP {
         }
     }
     /**
-     *the method returns the distance.
-     *from the source to given vertex.
+     * returns the distance of two vertices.
      *
      * @param      v  vertex
      *
@@ -223,7 +219,8 @@ class DijkstraSP {
         return distTo[v];
     }
     /**
-     *whether the path is there or not.
+     * returns the boolean value if the path is present
+     * or not.
      *
      * @param      v another vertex.
      *
@@ -233,10 +230,10 @@ class DijkstraSP {
         return distTo[v] < Double.POSITIVE_INFINITY;
     }
     /**
-     *shortest path to given vertex.
-     *
+     * returns shortest path to given vertex.
+     * Time complexity is O(ElogV)
      * @param      v  vertex.
-     *time complexity is O(ElogV)
+     *
      * @return shortest path is returned from the source.
      */
     public Iterable<Edge> pathTo(final int v) {
@@ -252,9 +249,9 @@ class DijkstraSP {
         return path;
     }
     /**
-     *returns the shortest distance between.
-     *two vertices.
-     *time complexity O(E)
+     * returns the shortest distance between.
+     * two vertices.
+     * Time complexity O(E)
      * @param      vertex  The vertex
      *
      * @return shortest distance between two vertices.
@@ -267,36 +264,51 @@ class DijkstraSP {
         return sum;
     }
 }
+/**
+ * Class for solution.
+ */
 class Solution{
-	private Solution(){
+    /**
+     * Constructs the object.
+     */
+    private Solution(){
 
-	}
-	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-		HashMap<String, Integer> map = new HashMap<String, Integer>();
-		String[] inputs = scan.nextLine().split(" ");
-		int vertices = Integer.parseInt(inputs[0]);
-		int edges = Integer.parseInt(inputs[1]);
-		String[] cities = scan.nextLine().split(" ");
-		for(int i=0;i<vertices;i++){
-			map.put(cities[i], i);
-		}
-		Edge obj;
-		EdgeWeightedGraph graph = new EdgeWeightedGraph(vertices);
-		for(int i =0;i<edges;i++){
-			String[] routes = scan.nextLine().split(" ");
-			obj = new Edge(map.get(routes[0]),map.get(routes[1]),
-				Double.parseDouble(routes[2]));
-			graph.addEdge(obj);
-		}
-		int numQueries = Integer.parseInt(scan.nextLine());
-		DijkstraSP dObj;
-		for(int i = 0;i<numQueries;i++){
-			String[] queries = scan.nextLine().split(" ");
-			int source = map.get(queries[0]);
-			dObj = new DijkstraSP(graph, source);
-			System.out.println((int) dObj.getDistance(map.get(queries[1])));
-		}
+    }
+    /**
+     * main method to perform operations.
+     * Time complexity is O(V+E+Q)
+     * V is number of vertices.
+     * E is number od edges.
+     * Q is number of queries.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        HashMap<String, Integer> map = new HashMap<String, Integer>();
+        String[] inputs = scan.nextLine().split(" ");
+        int vertices = Integer.parseInt(inputs[0]);
+        int edges = Integer.parseInt(inputs[1]);
+        String[] cities = scan.nextLine().split(" ");
+        for(int i=0;i<vertices;i++){
+            map.put(cities[i], i);
+        }
+        Edge obj;
+        EdgeWeightedGraph graph = new EdgeWeightedGraph(vertices);
+        for(int i =0;i<edges;i++){
+            String[] routes = scan.nextLine().split(" ");
+            obj = new Edge(map.get(routes[0]),map.get(routes[1]),
+                Double.parseDouble(routes[2]));
+            graph.addEdge(obj);
+        }
+        int numQueries = Integer.parseInt(scan.nextLine());
+        DijkstraSP dObj;
+        for(int i = 0;i<numQueries;i++){
+            String[] queries = scan.nextLine().split(" ");
+            int source = map.get(queries[0]);
+            dObj = new DijkstraSP(graph, source);
+            System.out.println((int) dObj.getDistance(map.get(queries[1])));
+        }
 
-	}
+    }
 }
