@@ -412,7 +412,7 @@ public class IndexMinPQ<Key extends Comparable<Key>>
         /**
          * Constructs the object.
          */
-        public HeapIterator() {
+        HeapIterator() {
             copy = new IndexMinPQ<Key>(pq.length - 1);
             for (int i = 1; i <= n; i++) {
                 copy.insert(pq[i], keys[pq[i]]);
