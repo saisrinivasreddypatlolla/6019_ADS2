@@ -177,9 +177,9 @@ class DijkstraSP {
      */
     DijkstraSP(final EdgeWeightedGraph g,
                 final int source) {
-        distTo = new Double[graph.vertices()];
-        edgeTo = new Edge[graph.vertices()];
-        for (int i = 0; i < graph.vertices(); i++) {
+        distTo = new Double[g.vertices()];
+        edgeTo = new Edge[g.vertices()];
+        for (int i = 0; i < g.vertices(); i++) {
             distTo[i] = Double.POSITIVE_INFINITY;
         }
         distTo[source] = 0.0;
@@ -187,7 +187,7 @@ class DijkstraSP {
         pq.insert(source, distTo[source]);
         while (!pq.isEmpty()) {
             int vertex = pq.delMin();
-            for (Edge edge : graph.adj(vertex)) {
+            for (Edge edge : g.adj(vertex)) {
                 relax(edge, vertex);
             }
         }

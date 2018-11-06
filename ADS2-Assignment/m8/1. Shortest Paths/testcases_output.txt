@@ -9,7 +9,7 @@ Expected Output:
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at DijkstraSP.<init>(Solution.java:180)
+	at DijkstraSP.<init>(Solution.java:186)
 	at Solution.main(Solution.java:297)
 ----------------------------------------
 
@@ -24,7 +24,7 @@ Expected Output:
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at DijkstraSP.<init>(Solution.java:180)
+	at DijkstraSP.<init>(Solution.java:186)
 	at Solution.main(Solution.java:297)
 ----------------------------------------
 
@@ -732,7 +732,7 @@ Expected Output:
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at DijkstraSP.<init>(Solution.java:180)
+	at DijkstraSP.<init>(Solution.java:186)
 	at Solution.main(Solution.java:297)
 ----------------------------------------
 
@@ -4193,7 +4193,7 @@ Expected Output:
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at DijkstraSP.<init>(Solution.java:180)
+	at DijkstraSP.<init>(Solution.java:186)
 	at Solution.main(Solution.java:297)
 ----------------------------------------
 
@@ -6569,7 +6569,7 @@ Expected Output:
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at DijkstraSP.<init>(Solution.java:180)
+	at DijkstraSP.<init>(Solution.java:186)
 	at Solution.main(Solution.java:297)
 ----------------------------------------
 
@@ -11528,7 +11528,7 @@ Expected Output:
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at DijkstraSP.<init>(Solution.java:180)
+	at DijkstraSP.<init>(Solution.java:186)
 	at Solution.main(Solution.java:297)
 ----------------------------------------
 
