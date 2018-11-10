@@ -34,14 +34,7 @@ public class Solution {
 			String str = "";
 			if(obj1.hasPathTo(Integer.parseInt(viaPath[1]))&&obj2.hasPathTo(Integer.parseInt(viaPath[2]))){
 				System.out.println(obj1.distTo(Integer.parseInt(viaPath[1]))+obj2.distTo(Integer.parseInt(viaPath[2])));
-				for( Integer i : obj1.pathTo(Integer.parseInt(viaPath[1]))){
-					str += i+" ";
-				}
-				for( Integer j : obj2.pathTo(Integer.parseInt(viaPath[2]))){
-					str += j+" ";
-				}
-				str += viaPath[2];
-				System.out.println(str);
+				System.out.println(obj1.pathTo(Integer.parseInt(viaPath[1]))+""+obj2.pathTo(Integer.parseInt(viaPath[2]))+" "+viaPath[2]);
 			} else{
 				System.out.println("No Path Found.");
 			}

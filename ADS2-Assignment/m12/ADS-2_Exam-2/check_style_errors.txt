@@ -47,21 +47,18 @@ Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Solution.java:36: Line is longer than 80 characters (found 136). [LineLength]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Solution.java:36:93: '+' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Solution.java:36:94: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Solution.java:37: Line is longer than 80 characters (found 92). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Solution.java:37:36: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Solution.java:37:37: '(' is followed by whitespace. [ParenPad]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Solution.java:37:92: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Solution.java:38:49: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Solution.java:38:50: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Solution.java:40: Line is longer than 80 characters (found 92). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Solution.java:40:36: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Solution.java:40:37: '(' is followed by whitespace. [ParenPad]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Solution.java:40:92: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Solution.java:41:49: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Solution.java:41:50: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Solution.java:45:31: 'else' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Solution.java:45:31: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Solution.java:37: Line is longer than 80 characters (found 154). [LineLength]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Solution.java:37:93: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Solution.java:37:94: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Solution.java:37:96: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Solution.java:37:97: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Solution.java:37:138: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Solution.java:37:139: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Solution.java:37:142: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Solution.java:37:143: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Solution.java:38:31: 'else' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Solution.java:38:31: '{' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 43 errors.
+Checkstyle ends with 40 errors.
 Starting audit...
 Audit done.
