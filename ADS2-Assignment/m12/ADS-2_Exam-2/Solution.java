@@ -14,7 +14,7 @@ public final class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int vertices = Integer.parseInt(scan.nextLine());
         int edges = Integer.parseInt(scan.nextLine());
@@ -55,11 +55,14 @@ public final class Solution {
                                    viaPath[1])) && obj2.hasPathTo(
                         Integer.parseInt(viaPath[2]))) {
                 System.out.println(obj1.distTo(
-                                       Integer.parseInt(viaPath[1])) + obj2.distTo(
+                                       Integer.parseInt(
+                                           viaPath[1])) + obj2.distTo(
                                        Integer.parseInt(viaPath[2])));
                 System.out.println(obj1.pathTo(
-                                       Integer.parseInt(viaPath[1])) + "" + obj2.pathTo(
-                                       Integer.parseInt(viaPath[2])) + viaPath[2]);
+                                       Integer.parseInt(
+                                           viaPath[1])) + "" + obj2.pathTo(
+                                       Integer.parseInt(
+                                           viaPath[2])) + viaPath[2]);
             } else {
                 System.out.println("No Path Found.");
             }
