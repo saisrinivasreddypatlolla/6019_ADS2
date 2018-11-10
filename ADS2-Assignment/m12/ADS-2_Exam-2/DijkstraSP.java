@@ -1,3 +1,6 @@
+/**
+ * Class for dijkstra sp.
+ */
 class DijkstraSP {
     /**
      * distance of the edge from vetrex1 to vertex 2.
