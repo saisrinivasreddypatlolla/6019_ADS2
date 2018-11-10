@@ -40,6 +40,7 @@ public class Solution {
 				for( Integer j : obj2.pathTo(Integer.parseInt(viaPath[2]))){
 					str += j+" ";
 				}
+				str += viaPath[2];
 				System.out.println(str);
 			} else{
 				System.out.println("No Path Found.");

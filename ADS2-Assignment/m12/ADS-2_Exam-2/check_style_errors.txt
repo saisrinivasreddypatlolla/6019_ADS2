@@ -59,8 +59,8 @@ Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Solution.java:40:92: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Solution.java:41:49: '+' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Solution.java:41:50: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Solution.java:44:31: 'else' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Solution.java:44:31: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Solution.java:45:31: 'else' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Solution.java:45:31: '{' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
 Checkstyle ends with 43 errors.
 Starting audit...
