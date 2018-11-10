@@ -85,31 +85,16 @@ class DijkstraSP {
      *
      * @return shortest path is returned from the source.
      */
-    public Iterable<Edge> pathTo(final int v) {
+    public Iterable<Integer> pathTo(final int v) {
         if (!hasPathTo(v)) {
             return null;
         }
-        Stack<Edge> path = new Stack<Edge>();
+        Stack<Integer> path = new Stack<Integer>();
         int x = v;
         for (Edge e = edgeTo[v]; e != null; e = edgeTo[x]) {
-            path.push(e);
+            path.push(e.other(v));
             x = e.other(x);
         }
         return path;
-    }
-    /**
-     * returns the shortest distance between.
-     * two vertices.
-     * Time complexity O(E)
-     * @param      vertex  The vertex
-     *
-     * @return shortest distance between two vertices.
-     */
-    public double getDistance(final int vertex) {
-        double sum = 0;
-        for (Edge each : pathTo(vertex)) {
-            sum += each.getWeight();
-        }
-        return sum;
     }
 }
