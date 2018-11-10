@@ -70,6 +70,11 @@ class Edge implements Comparable<Edge> {
     public double getWeight() {
         return this.weight;
     }
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         return String.format("%d-%d %.5f", vertexOne, vertexTwo, weight);
     }
