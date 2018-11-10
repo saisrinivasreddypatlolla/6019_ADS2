@@ -8,17 +8,8 @@ Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Edge.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Edge.java:73:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Edge.java:73:29: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Edge.java:75:25: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Edge.java:75:26: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Edge.java:75:29: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Edge.java:75:30: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Edge.java:75:39: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Edge.java:75:40: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Edge.java:75:43: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\Edge.java:75:44: '+' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\EdgeWeightedGraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m12\ADS-2_Exam-2\EdgeWeightedGraph.java:13:5: Missing a Javadoc comment. [JavadocVariable]

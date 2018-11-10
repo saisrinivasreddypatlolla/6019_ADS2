@@ -70,9 +70,7 @@ class Edge implements Comparable<Edge> {
     public double getWeight() {
         return this.weight;
     }
-    public String toString(){
-        String str = "";
-        str += vertexOne+"-"+vertexTwo+" "+weight;
-        return str;
+    public String toString() {
+        return String.format("%d-%d %.5f", vertexOne, vertexTwo, weight);
     }
 }
