@@ -18,10 +18,6 @@ public class Solution {
 			break;
 
 		case "DirectedPaths":
-			// Handle the case of DirectedPaths, where two integers are given.
-			// First is the source and second is the destination.
-			// If the path exists print the distance between them.
-			// Other wise print "No Path Found."
 			String[] path = scan.nextLine().split(" ");
 			DijkstraSP obj = new DijkstraSP(graph, Integer.parseInt(path[0]));
 			if(obj.hasPathTo(Integer.parseInt(path[1]))){
@@ -32,11 +28,6 @@ public class Solution {
 			break;
 
 		case "ViaPaths":
-			// Handle the case of ViaPaths, where three integers are given.
-			// First is the source and second is the via is the one where path should pass throuh.
-			// third is the destination.
-			// If the path exists print the distance between them.
-			// Other wise print "No Path Found."
 			String[] viaPath = scan.nextLine().split(" ");
 			DijkstraSP obj1 = new DijkstraSP(graph, Integer.parseInt(viaPath[0]));
 			DijkstraSP obj2 = new DijkstraSP(graph, Integer.parseInt(viaPath[1]));
