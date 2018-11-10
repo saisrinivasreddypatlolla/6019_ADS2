@@ -20,7 +20,7 @@ public final class Solution {
      * for via paths query.
      * 2(V+E) for two dijkstra's constructor's and
      * 2V for pathTo method.
-     * 
+     *
      *
      * @param      args  The arguments
      */
@@ -83,6 +83,7 @@ public final class Solution {
             break;
         }
 
-    }}
+    }
+}
 
 
