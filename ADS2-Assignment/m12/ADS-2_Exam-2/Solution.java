@@ -11,6 +11,16 @@ public final class Solution {
     }
     /**
      * main method to perform operations.
+     * Time complexity of this method is O(E)
+     * E is number of edges.
+     * for graph query
+     * V for printing graph.
+     * for directed path query.
+     * E+V for dijkstra's constructor.
+     * for via paths query.
+     * 2(V+E) for two dijkstra's constructor's and
+     * 2V for pathTo method.
+     * 
      *
      * @param      args  The arguments
      */
@@ -73,5 +83,6 @@ public final class Solution {
             break;
         }
 
-    }
-}
+    }}
+
+
