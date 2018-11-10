@@ -92,7 +92,8 @@ class DijkstraSP {
         Stack<Integer> path = new Stack<Integer>();
         int x = v;
         for (Edge e = edgeTo[v]; e != null; e = edgeTo[x]) {
-            path.push(e.other(v));
+            path.push(e.other(x));
+            x = e.other(x);
         }
         return path;
     }
