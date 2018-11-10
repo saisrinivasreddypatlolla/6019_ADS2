@@ -93,7 +93,6 @@ class DijkstraSP {
         int x = v;
         for (Edge e = edgeTo[v]; e != null; e = edgeTo[x]) {
             path.push(e.other(v));
-            x = e.other(x);
         }
         return path;
     }
