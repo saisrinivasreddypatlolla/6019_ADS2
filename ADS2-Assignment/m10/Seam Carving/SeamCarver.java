@@ -1,5 +1,4 @@
 import java.awt.Color;
-import java.lang.Math;
 /**
  * Class for seam carver.
  */
@@ -43,7 +42,7 @@ public class SeamCarver {
 		return width;
 	}
 	/**
-	 *height of current picture
+	 *height of current picture.
 	 *
 	 * @return height of image.
 	 */
@@ -51,7 +50,7 @@ public class SeamCarver {
 		return height;
 	}
 	/**
-	 *energy of pixel at column x and row y
+	 *energy of pixel at column x and row y.
 	 *
 	 * @param      x  x coordinate
 	 * @param      y   y coordinate
@@ -67,17 +66,26 @@ public class SeamCarver {
 		Color object = picture.get(x, y);
 		Color leftObj = picture.get(x, y - 1);
 		Color rightObj = picture.get(x, y + 1);
-		double xRed = Math.abs((leftObj.getRed() - rightObj.getRed()));
-		double xGreen = Math.abs((leftObj.getGreen() - rightObj.getGreen()));
-		double xBlue = Math.abs((leftObj.getBlue() - rightObj.getBlue()));
-		xCoordinate = Math.pow(xRed, 2) + Math.pow(xBlue, 2) + Math.pow(xGreen, 2);
+		double xRed = Math.abs(
+		                  leftObj.getRed() - rightObj.getRed());
+		double xGreen = Math.abs(
+		                    leftObj.getGreen() - rightObj.getGreen());
+		double xBlue = Math.abs(
+		                   leftObj.getBlue() - rightObj.getBlue());
+		xCoordinate = Math.pow(
+		                  xRed, 2) + Math.pow(
+		                  xBlue, 2) + Math.pow(xGreen, 2);
 		Color topObj = picture.get(x - 1, y);
 		Color bottomObj = picture.get(x + 1, y);
-		double yRed = Math.abs((topObj.getRed() - bottomObj.getRed()));
-		double yGreen = Math.abs((topObj.getGreen() - bottomObj.getGreen()));
-		double yBlue = Math.abs((topObj.getBlue() - bottomObj.getBlue()));
-		yCoordinate = Math.pow(yRed, 2) + Math.pow(yBlue, 2) + Math.pow(yGreen, 2);
-		double sum = Math.sqrt((xCoordinate + yCoordinate));
+		double yRed = Math.abs(
+		                  topObj.getRed() - bottomObj.getRed());
+		double yGreen = Math.abs(
+		                    topObj.getGreen() - bottomObj.getGreen());
+		double yBlue = Math.abs(
+		                   topObj.getBlue() - bottomObj.getBlue());
+		yCoordinate = Math.pow(yRed, 2) + Math.pow(
+		                  yBlue, 2) + Math.pow(yGreen, 2);
+		double sum = Math.sqrt(xCoordinate + yCoordinate);
 		return sum;
 	}
 	/**sequence of indices for horizontal seam
