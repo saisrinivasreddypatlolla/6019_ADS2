@@ -94,7 +94,6 @@ public class SeamCarver {
         for (int row = 0; row < height; row++) {
             distTo[row][0] = 1000;
         }
-		// this is for relaxation.
         for (int col = 0; col < width - 1; col++) {
             for (int row = 0; row < height; row++) {
                 relaxH(row, col, edgeTo, distTo);
@@ -109,7 +108,6 @@ public class SeamCarver {
             }
         }
         int[] indices = new int[width];
-        //to find the horizontal seam.
         for (int col = width - 1, row = minRow; col >= 0; col--) {
             indices[col] = row;
             row -= edgeTo[row][col];
@@ -212,9 +210,13 @@ public class SeamCarver {
                 edgeTo[nextRow][nextCol] = i;
             }
     	}
-	}
-	// remove horizontal seam from current picture
-	//time complexity is O(width * height)
+	}	
+	/**
+	 * Removes a horizontal seam.
+	 * time complexity is O(width * height)
+	 *
+	 * @param      seam  The seam
+	 */
 	public void removeHorizontalSeam(int[] seam) {
 		//handle exceptions
 	for(int col = 0; col < width; col++) {
@@ -224,8 +226,12 @@ public class SeamCarver {
 	}
 	height--;
 	}
-	// remove vertical seam from current picture
-	//time complexity is O(width * height)
+	/**
+	 * Removes a vertical seam.
+	 * time complexity is O(width * height)
+	 *
+	 * @param      seam  The seam
+	 */
 	public void removeVerticalSeam(int[] seam) {
 	for(int row = 0; row < height; row++) {
 		for(int col = seam[row]; col < width - 1; col++) {
