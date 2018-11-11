@@ -58,7 +58,7 @@ public class SeamCarver {
 	 *
 	 * @return energy of pixel.
 	 */
-	public double energy(int x, int y) {
+	public double energy(final int x, final int y) {
 		if (x == 0 || y == 0 || y == (height - 1) || x == (width - 1)) {
 			return 1000.0;
 		}
@@ -121,19 +121,29 @@ public class SeamCarver {
 	 * @param      edgeTo  The edge to
 	 * @param      distTo  The distance to
 	 */
-	private void relaxH(int row, int col, int[][] edgeTo, double[][] distTo) {
+	private void relaxH(final int row, final int col,
+	                    final int[][] edgeTo,
+	                    final double[][] distTo) {
 		int nextCol = col + 1;
 		for (int i = -1; i <= 1; i++) {
 			int nextRow = row + i;
-			if (nextRow < 0 || nextRow >= height) continue;
+			if (nextRow < 0 || nextRow >= height) {
+				continue;
+			}
 			if (i == 0) {
-				if (distTo[nextRow][nextCol] >= distTo[row][col]  + energy(nextCol, nextRow)) {
-					distTo[nextRow][nextCol] = distTo[row][col]  + energy(nextCol, nextRow);
+				if (distTo[nextRow][nextCol] >= distTo[row][col]
+				        + energy(nextCol, nextRow)) {
+					distTo[nextRow][nextCol] = distTo[row][col]
+					                           + energy(
+					                               nextCol, nextRow);
 					edgeTo[nextRow][nextCol] = i;
 				}
 			}
-			if (distTo[nextRow][nextCol] > distTo[row][col]  + energy(nextCol, nextRow)) {
-				distTo[nextRow][nextCol] = distTo[row][col]  + energy(nextCol, nextRow);
+			if (distTo[nextRow][nextCol] > distTo[row][col]
+			        + energy(nextCol, nextRow)) {
+				distTo[nextRow][nextCol] = distTo[row][col]
+				                           + energy(
+				                               nextCol, nextRow);
 				edgeTo[nextRow][nextCol] = i;
 			}
 		}
@@ -188,7 +198,7 @@ public class SeamCarver {
 	 *H is the height of image
 	 * @param      distTo  The distance to
 	 */
-	private void reset(double[][] distTo) {
+	private void reset(final double[][] distTo) {
 		/**
 		 *reset all the values to maxvalue.
 		 */
@@ -206,7 +216,9 @@ public class SeamCarver {
 	 * @param      edgeTo  The edge to
 	 * @param      distTo  The distance to
 	 */
-	private void relaxV(int row, int col, int[][] edgeTo, double[][] distTo) {
+	private void relaxV(final int row, final int col,
+	                    final int[][] edgeTo,
+	                    final double[][] distTo) {
 		int nextRow = row + 1;
 		for (int i = -1; i <= 1; i++) {
 			int nextCol = col + i;
@@ -215,13 +227,19 @@ public class SeamCarver {
 			}
 			//spl case for bottom element.
 			if (i == 0) {
-				if (distTo[nextRow][nextCol] >= distTo[row][col] + energy(nextCol, nextRow)) {
-					distTo[nextRow][nextCol] = distTo[row][col] + energy(nextCol, nextRow);
+				if (distTo[nextRow][nextCol] >= distTo[row][col]
+				        + energy(
+				            nextCol, nextRow)) {
+					distTo[nextRow][nextCol] = distTo[row][col]
+					                           + energy(
+					                               nextCol, nextRow);
 					edgeTo[nextRow][nextCol] = i;
 				}
 			}
-			if (distTo[nextRow][nextCol] > distTo[row][col] + energy(nextCol, nextRow)) {
-				distTo[nextRow][nextCol] = distTo[row][col] + energy(nextCol, nextRow);
+			if (distTo[nextRow][nextCol] > distTo[row][col]
+			        + energy(nextCol, nextRow)) {
+				distTo[nextRow][nextCol] = distTo[row][col]
+				                           + energy(nextCol, nextRow);
 				edgeTo[nextRow][nextCol] = i;
 			}
 		}
@@ -232,11 +250,12 @@ public class SeamCarver {
 	 *
 	 * @param      seam  The seam
 	 */
-	public void removeHorizontalSeam(int[] seam) {
+	public void removeHorizontalSeam(final int[] seam) {
 		//handle exceptions
 		for (int col = 0; col < width; col++) {
 			for (int row = seam[col]; row < height - 1; row++) {
-				this.picture.set(col, row, this.picture.get(col, row + 1));
+				this.picture.set(
+				    col, row, this.picture.get(col, row + 1));
 			}
 		}
 		height--;
@@ -247,10 +266,11 @@ public class SeamCarver {
 	 *
 	 * @param      seam  The seam
 	 */
-	public void removeVerticalSeam(int[] seam) {
+	public void removeVerticalSeam(final int[] seam) {
 		for (int row = 0; row < height; row++) {
 			for (int col = seam[row]; col < width - 1; col++) {
-				this.picture.set(col, row, this.picture.get(col + 1, row));
+				this.picture.set(
+				    col, row, this.picture.get(col + 1, row));
 			}
 		}
 		width--;
