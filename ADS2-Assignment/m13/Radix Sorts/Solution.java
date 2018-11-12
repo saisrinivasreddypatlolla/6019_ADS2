@@ -13,14 +13,14 @@ class LSD {
 	 */
 	public void sort(final String[] a, final int w) {
 		int n = a.length;
-		int R = 256;
+		final int extendedASCII = 256;
 		String[] aux = new String[n];
 		for (int d = w - 1; d >= 0; d--) {
-			int[] count = new int[R + 1];
+			int[] count = new int[extendedASCII + 1];
 			for (int i = 0; i < n; i++) {
 				count[a[i].charAt(d) + 1]++;
 			}
-			for (int r = 0; r < R; r++) {
+			for (int r = 0; r < extendedASCII; r++) {
 				count[r + 1] += count[r];
 			}
 			for (int i = 0; i < n; i++) {
@@ -35,7 +35,7 @@ class LSD {
 /**
  * Class for solution.
  */
-class Solution {
+final class Solution {
 	/**
 	 * Constructs the object.
 	 */

@@ -1,9 +1,6 @@
 Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m13\Radix Sorts\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m13\Radix Sorts\Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m13\Radix Sorts\Solution.java:16:21: Name 'R' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m13\Radix Sorts\Solution.java:16:25: '256' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m13\Radix Sorts\Solution.java:38: Class Solution should be declared as final. [FinalClass]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m13\Radix Sorts\Solution.java:48: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 3 errors.
