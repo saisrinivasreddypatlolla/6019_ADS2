@@ -392,12 +392,10 @@ Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:90: Line is longer than 80 characters (found 92). [LineLength]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:105: Missing a Javadoc comment. [JavadocType]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:106:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:106:13: Variable 'trie' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:106:22: Variable 'trie' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:107:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:107:9: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:107:19: Parameter st should be final. [FinalParameters]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:109:20: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:109:44: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:115:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:115:45: Parameter prefix should be final. [FinalParameters]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:119:9: Missing a Javadoc comment. [JavadocMethod]
@@ -405,9 +403,11 @@ Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:125:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:125:48: Parameter words should be final. [FinalParameters]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:125:72: Parameter k should be final. [FinalParameters]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:132:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:132:36: Parameter t9Signature should be final. [FinalParameters]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:132:56: Parameter k should be final. [FinalParameters]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:126: Line is longer than 80 characters (found 91). [LineLength]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:137: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:155:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:155:36: Parameter t9Signature should be final. [FinalParameters]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:155:56: Parameter k should be final. [FinalParameters]
 Audit done.
 Checkstyle ends with 33 errors.
 Starting audit...

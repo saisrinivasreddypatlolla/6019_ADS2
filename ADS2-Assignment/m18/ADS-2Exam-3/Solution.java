@@ -103,10 +103,10 @@ public class Solution {
 }
 
 class T9 {
-	TST trie;
+	TST<Integer> trie;
 	public T9(BinarySearchST<String, Integer> st) {
-		trie = new TST();
-		for(String key : st.keys()){
+		trie = new TST<>();
+		for (String key : st.keys()) {
 			trie.put(key, st.get(key));
 		}
 	}
@@ -123,8 +123,31 @@ class T9 {
 
 	// return all possibilities(words), find top k with highest frequency.
 	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
-		// your code goes here
-		return null;
+		BinarySearchST<Integer, String> st = new BinarySearchST<Integer, String>();
+		int m = 0;
+		for (String key : words) {
+			Integer value = trie.get(key);
+			if (st.contains(value)) {
+				String str = st.get(value);
+				if (str.length() > key.length()) {
+					key = str;
+				}
+			}
+			st.put(value, key);
+			
+		}
+		Bag<String> bag = new Bag<String>();
+		String[] ascendingOrder = new String[k];
+		for (int j = 0; j < k; j++) {
+			Integer i = st.max();
+			ascendingOrder[j] = st.get(i);
+			st.deleteMax();
+		}
+		Arrays.sort(ascendingOrder);
+		for (int n = k - 1; n >= 0; n--) {
+			bag.add(ascendingOrder[n]);
+		}
+		return bag;
 	}
 
 	// final output
