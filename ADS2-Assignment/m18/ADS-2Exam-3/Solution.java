@@ -134,7 +134,6 @@ class T9 {
 				}
 			}
 			st.put(value, key);
-			
 		}
 		Bag<String> bag = new Bag<String>();
 		String[] ascendingOrder = new String[k];
