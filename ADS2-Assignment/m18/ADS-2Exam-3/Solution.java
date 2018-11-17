@@ -173,8 +173,11 @@ class T9 {
 					pattern += "9";
 				}
 			}
+			if(pattern.equals(t9Signature)){
+				ar.add(each);
+			}
 		}
-		return null;
+		return ar;
 	}
 
 	// return all possibilities(words), find top k with highest frequency.

@@ -406,15 +406,17 @@ Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:166: Line is longer than 80 characters (found 103). [LineLength]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:169: Line is longer than 80 characters (found 86). [LineLength]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:172: Line is longer than 80 characters (found 103). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:181:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:181:48: Parameter words should be final. [FinalParameters]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:181:72: Parameter k should be final. [FinalParameters]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:182: Line is longer than 80 characters (found 94). [LineLength]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:210:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:210:36: Parameter t9Signature should be final. [FinalParameters]
-[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:210:56: Parameter k should be final. [FinalParameters]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:176:27: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:176:56: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:184:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:184:48: Parameter words should be final. [FinalParameters]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:184:72: Parameter k should be final. [FinalParameters]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:185: Line is longer than 80 characters (found 94). [LineLength]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:213:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:213:36: Parameter t9Signature should be final. [FinalParameters]
+[ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\Solution.java:213:56: Parameter k should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 38 errors.
+Checkstyle ends with 40 errors.
 Starting audit...
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\ADS2\6019_ADS2\ADS2-Assignment\m18\ADS-2Exam-3\TST.java:46: Line is longer than 80 characters (found 84). [LineLength]
