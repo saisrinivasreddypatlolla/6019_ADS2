@@ -283,10 +283,12 @@ paper
 keep
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: called max() with empty symbol table
-	at BinarySearchST.max(BinarySearchST.java:285)
-	at T9.getSuggestions(Solution.java:200)
-	at T9.t9(Solution.java:214)
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.util.ComparableTimSort.countRunAndMakeAscending(Unknown Source)
+	at java.base/java.util.ComparableTimSort.sort(Unknown Source)
+	at java.base/java.util.Arrays.sort(Unknown Source)
+	at T9.getSuggestions(Solution.java:238)
+	at T9.t9(Solution.java:255)
 	at Solution.main(Solution.java:82)
 ----------------------------------------
 

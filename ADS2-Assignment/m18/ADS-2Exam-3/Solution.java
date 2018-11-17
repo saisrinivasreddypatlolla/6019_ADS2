@@ -12,7 +12,7 @@ public class Solution {
 
 	}
 	/**
-	 * { function_description }.
+	 * main method to perform operations.
 	 *
 	 * @param      args  The arguments
 	 */
@@ -92,11 +92,12 @@ public class Solution {
 	}
 
 	/**
-	 * { function_description }.
+	 * read file method reads the data in file and stores.
+	 * it in string array.
 	 *
 	 * @param      file  The file
 	 *
-	 * @return     { description_of_the_return_value }
+	 * @return     returns string array with words.
 	 */
 	public static String[] toReadFile(final String file) {
 		In in = new In(file);
@@ -107,7 +108,7 @@ public class Solution {
 	 *
 	 * @param      file  The file
 	 *
-	 * @return     { description_of_the_return_value }
+	 * @return     returns BST object.
 	 */
 	public static BinarySearchST <
 	String, Integer > loadDictionary(final String file) {
@@ -127,62 +128,93 @@ public class Solution {
 	}
 
 }
-
+/**
+ * Class for t 9.
+ */
 class T9 {
-	TST<Integer> trie;
-	public T9(BinarySearchST<String, Integer> stObj) {
+	/**
+	 * TST object to store the words and frequency.
+	 */
+	private TST<Integer> trie;
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      stObj  The st object
+	 */
+	public T9(final BinarySearchST<String, Integer> stObj) {
 		trie = new TST<>();
 		for (String key : stObj.keys()) {
 			trie.put(key, stObj.get(key));
 		}
 	}
 
-	// get all the prefixes that match with given prefix.
+	/**
+	 * Gets all words.
+	 *
+	 * @param      prefix  The prefix
+	 *
+	 * @return     All words.
+	 */
 	public Iterable<String> getAllWords(String prefix) {
 		return trie.keysWithPrefix(prefix);
 	}
-
-	public Iterable<String> potentialWords(String t9Signature) {
+	/**
+	 * { function_description }.
+	 *
+	 * @param      t9Signature  The t 9 signature
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	public Iterable<String> potentialWords(final String t9Signature) {
 		ArrayList<String> ar = new ArrayList<>();
 		for (String each : trie.keys()) {
 			String[] str = each.split("");
 			String pattern = "";
-			for (String a : str) {
-				if (a.equals("a") || a.equals("b") || a.equals("c")) {
+			for (String charac : str) {
+				if (charac.equals("a") || charac.equals("b") || charac.equals("c")) {
 					pattern += "2";
 				}
-				if (a.equals("d") || a.equals("e") || a.equals("f")) {
+				if (charac.equals("d") || charac.equals("e") || charac.equals("f")) {
 					pattern += "3";
 				}
-				if (a.equals("g") || a.equals("h") || a.equals("i")) {
+				if (charac.equals("g") || charac.equals("h") || charac.equals("i")) {
 					pattern += "4";
 				}
-				if (a.equals("j") || a.equals("k") || a.equals("l")) {
+				if (charac.equals("j") || charac.equals("k") || charac.equals("l")) {
 					pattern += "5";
 				}
-				if (a.equals("m") || a.equals("n") || a.equals("o")) {
+				if (charac.equals("m") || charac.equals("n") || charac.equals("o")) {
 					pattern += "6";
 				}
-				if (a.equals("p") || a.equals("q") || a.equals("r") || a.equals("s")) {
+				if (charac.equals("p") || charac.equals("q") || charac.equals("r") || charac.equals("s")) {
 					pattern += "7";
 				}
-				if (a.equals("t") || a.equals("u") || a.equals("v")) {
+				if (charac.equals("t") || charac.equals("u") || charac.equals("v")) {
 					pattern += "8";
 				}
-				if (a.equals("w") || a.equals("x") || a.equals("y") || a.equals("z")) {
+				if (charac.equals("w") || charac.equals("x") || charac.equals("y") || charac.equals("z")) {
 					pattern += "9";
 				}
 			}
-			if(pattern.equals(t9Signature)){
+			if (pattern.equals(t9Signature)) {
 				ar.add(each);
 			}
 		}
 		return ar;
 	}
 
-	// return all possibilities(words), find top k with highest frequency.
-	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
-		BinarySearchST<Integer, String> stObj = new BinarySearchST<Integer, String>();
+	/**
+	 * Gets the suggestions.
+	 *
+	 * @param      words  The words
+	 * @param      k      number of
+	 *
+	 * @return     The suggestions.
+	 */
+	public Iterable<String> getSuggestions(
+	    final Iterable<String> words, final int k) {
+		BinarySearchST<Integer, String>
+		stObj = new BinarySearchST<Integer, String>();
 		int m = 0;
 		for (String key : words) {
 			Integer value = trie.get(key);
@@ -197,9 +229,11 @@ class T9 {
 		Bag<String> bag = new Bag<String>();
 		String[] ascendingOrder = new String[k];
 		for (int j = 0; j < k; j++) {
-			Integer i = stObj.max();
-			ascendingOrder[j] = stObj.get(i);
-			stObj.deleteMax();
+			if (!stObj.isEmpty()) {
+				Integer i = stObj.max();
+				ascendingOrder[j] = stObj.get(i);
+				stObj.deleteMax();
+			}
 		}
 		Arrays.sort(ascendingOrder);
 		for (int n = k - 1; n >= 0; n--) {
@@ -208,9 +242,16 @@ class T9 {
 		return bag;
 	}
 
-	// final output
-	// Don't modify this method.
-	public Iterable<String> t9(String t9Signature, int k) {
+	/**
+	 * this method returns the t9 formate.
+	 *
+	 * @param      t9Signature  The t 9 signature
+	 * @param      k            number of inputs
+	 *
+	 * @return     returns iterable with t9 format.
+	 */
+	public Iterable<String> t9(final String t9Signature,
+	                           final int k) {
 		return getSuggestions(potentialWords(t9Signature), k);
 	}
 }
