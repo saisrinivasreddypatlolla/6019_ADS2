@@ -138,6 +138,8 @@ class T9 {
 	private TST<Integer> trie;
 	/**
 	 * Constructs the object.
+	 * Time complexity is O(K).
+	 * K is number of keys.
 	 *
 	 * @param      stObj  The st object
 	 */
