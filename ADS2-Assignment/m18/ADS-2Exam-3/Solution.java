@@ -1,11 +1,22 @@
 import java.util.Scanner;
 import java.util.*;
 
-
+/**
+ * Class for solution.
+ */
 public class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
 
-	// Don't modify this method.
-	public static void main(String[] args) {
+	}
+	/**
+	 * { function_description }.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String cases = scan.nextLine();
 
@@ -80,34 +91,49 @@ public class Solution {
 		}
 	}
 
-	// Don't modify this method.
-	public static String[] toReadFile(String file) {
+	/**
+	 * { function_description }.
+	 *
+	 * @param      file  The file
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	public static String[] toReadFile(final String file) {
 		In in = new In(file);
 		return in.readAllStrings();
 	}
-
-	public static BinarySearchST<String, Integer> loadDictionary(String file) {
-		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
+	/**
+	 * Loads a dictionary.
+	 *
+	 * @param      file  The file
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	public static BinarySearchST <
+	String, Integer > loadDictionary(final String file) {
+		BinarySearchST <
+		String, Integer >  stObj = new BinarySearchST <
+		String, Integer > ();
 		String[] words = toReadFile(file);
 		for (int i = 0; i < words.length; i++) {
 			String word = words[i].toLowerCase();
-			if (!st.contains(word)) {
-				st.put(word, 1);
+			if (!stObj.contains(word)) {
+				stObj.put(word, 1);
 			} else {
-				st.put(word, st.get(word) + 1);
+				stObj.put(word, stObj.get(word) + 1);
 			}
 		}
-		return st;
+		return stObj;
 	}
 
 }
 
 class T9 {
 	TST<Integer> trie;
-	public T9(BinarySearchST<String, Integer> st) {
+	public T9(BinarySearchST<String, Integer> stObj) {
 		trie = new TST<>();
-		for (String key : st.keys()) {
-			trie.put(key, st.get(key));
+		for (String key : stObj.keys()) {
+			trie.put(key, stObj.get(key));
 		}
 	}
 
@@ -117,30 +143,60 @@ class T9 {
 	}
 
 	public Iterable<String> potentialWords(String t9Signature) {
-		// your code goes here
+		ArrayList<String> ar = new ArrayList<>();
+		for (String each : trie.keys()) {
+			String[] str = each.split("");
+			String pattern = "";
+			for (String a : str) {
+				if (a.equals("a") || a.equals("b") || a.equals("c")) {
+					pattern += "2";
+				}
+				if (a.equals("d") || a.equals("e") || a.equals("f")) {
+					pattern += "3";
+				}
+				if (a.equals("g") || a.equals("h") || a.equals("i")) {
+					pattern += "4";
+				}
+				if (a.equals("j") || a.equals("k") || a.equals("l")) {
+					pattern += "5";
+				}
+				if (a.equals("m") || a.equals("n") || a.equals("o")) {
+					pattern += "6";
+				}
+				if (a.equals("p") || a.equals("q") || a.equals("r") || a.equals("s")) {
+					pattern += "7";
+				}
+				if (a.equals("t") || a.equals("u") || a.equals("v")) {
+					pattern += "8";
+				}
+				if (a.equals("w") || a.equals("x") || a.equals("y") || a.equals("z")) {
+					pattern += "9";
+				}
+			}
+		}
 		return null;
 	}
 
 	// return all possibilities(words), find top k with highest frequency.
 	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
-		BinarySearchST<Integer, String> st = new BinarySearchST<Integer, String>();
+		BinarySearchST<Integer, String> stObj = new BinarySearchST<Integer, String>();
 		int m = 0;
 		for (String key : words) {
 			Integer value = trie.get(key);
-			if (st.contains(value)) {
-				String str = st.get(value);
+			if (stObj.contains(value)) {
+				String str = stObj.get(value);
 				if (str.length() > key.length()) {
 					key = str;
 				}
 			}
-			st.put(value, key);
+			stObj.put(value, key);
 		}
 		Bag<String> bag = new Bag<String>();
 		String[] ascendingOrder = new String[k];
 		for (int j = 0; j < k; j++) {
-			Integer i = st.max();
-			ascendingOrder[j] = st.get(i);
-			st.deleteMax();
+			Integer i = stObj.max();
+			ascendingOrder[j] = stObj.get(i);
+			stObj.deleteMax();
 		}
 		Arrays.sort(ascendingOrder);
 		for (int n = k - 1; n >= 0; n--) {

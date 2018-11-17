@@ -158,7 +158,7 @@ seeking
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:39)
+	at Solution.main(Solution.java:50)
 ----------------------------------------
 
 ########## Testcase 3: Passed ##########
@@ -225,8 +225,8 @@ keep
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at T9.getSuggestions(Solution.java:128)
-	at T9.t9(Solution.java:155)
-	at Solution.main(Solution.java:71)
+	at T9.getSuggestions(Solution.java:184)
+	at T9.t9(Solution.java:211)
+	at Solution.main(Solution.java:82)
 ----------------------------------------
 
