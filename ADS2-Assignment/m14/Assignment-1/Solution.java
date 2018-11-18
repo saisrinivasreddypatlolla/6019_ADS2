@@ -227,3 +227,4 @@ class TST<Value> {
         collect(node.right, one, que);
     }
 }
+
